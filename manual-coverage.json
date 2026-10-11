@@ -1,0 +1,4251 @@
+{
+  "version": "Live 12",
+  "source": "https://www.ableton.com/en/live-manual/12/welcome-to-live/",
+  "retrieved": "2026-09-22",
+  "counts": {
+    "chapters": 42,
+    "sections": 1051,
+    "shortcuts": 292,
+    "authored": 519,
+    "sourceOnly": 532,
+    "shortcutTableSections": 24,
+    "referenceOnly": 508,
+    "devices": 85,
+    "devicePanelsPending": 59
+  },
+  "chapters": [
+    {
+      "title": "Welcome to Live",
+      "number": "1",
+      "view": "origins",
+      "total": 2,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 1
+    },
+    {
+      "title": "First Steps",
+      "number": "2",
+      "view": "workspace",
+      "total": 17,
+      "authored": 17,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Live Concepts",
+      "number": "3",
+      "view": "workspace",
+      "total": 22,
+      "authored": 3,
+      "shortcutTables": 0,
+      "referenceOnly": 19
+    },
+    {
+      "title": "Working with the Browser",
+      "number": "4",
+      "view": "workspace",
+      "total": 38,
+      "authored": 38,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Managing Files and Sets",
+      "number": "5",
+      "view": "sets",
+      "total": 38,
+      "authored": 38,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Arrangement View",
+      "number": "6",
+      "view": "sets",
+      "total": 18,
+      "authored": 18,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Session View",
+      "number": "7",
+      "view": "sets",
+      "total": 11,
+      "authored": 11,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Clip View",
+      "number": "8",
+      "view": "clips",
+      "total": 37,
+      "authored": 37,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Audio Clips, Tempo, and Warping",
+      "number": "9",
+      "view": "clips",
+      "total": 27,
+      "authored": 27,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Editing MIDI",
+      "number": "10",
+      "view": "clips",
+      "total": 47,
+      "authored": 47,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "MIDI Tools",
+      "number": "11",
+      "view": "clips",
+      "total": 22,
+      "authored": 18,
+      "shortcutTables": 0,
+      "referenceOnly": 4
+    },
+    {
+      "title": "Editing MPE",
+      "number": "12",
+      "view": "clips",
+      "total": 9,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 8
+    },
+    {
+      "title": "Converting Audio to MIDI",
+      "number": "13",
+      "view": "clips",
+      "total": 8,
+      "authored": 8,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Using Grooves",
+      "number": "14",
+      "view": "clips",
+      "total": 10,
+      "authored": 10,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Using Tuning Systems",
+      "number": "15",
+      "view": "clips",
+      "total": 7,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 6
+    },
+    {
+      "title": "Launching Clips",
+      "number": "16",
+      "view": "clips",
+      "total": 14,
+      "authored": 14,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Routing and I/O",
+      "number": "17",
+      "view": "sets",
+      "total": 25,
+      "authored": 25,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Mixing",
+      "number": "18",
+      "view": "sets",
+      "total": 11,
+      "authored": 11,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Recording New Clips",
+      "number": "19",
+      "view": "clips",
+      "total": 18,
+      "authored": 18,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Bounce to Audio",
+      "number": "20",
+      "view": "sets",
+      "total": 4,
+      "authored": 4,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Comping",
+      "number": "21",
+      "view": "clips",
+      "total": 8,
+      "authored": 8,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Stem Separation",
+      "number": "22",
+      "view": "clips",
+      "total": 4,
+      "authored": 4,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Working with Instruments and Effects",
+      "number": "23",
+      "view": "devices",
+      "total": 20,
+      "authored": 3,
+      "shortcutTables": 0,
+      "referenceOnly": 17
+    },
+    {
+      "title": "Instrument, Drum and Effect Racks",
+      "number": "24",
+      "view": "devices",
+      "total": 23,
+      "authored": 4,
+      "shortcutTables": 0,
+      "referenceOnly": 19
+    },
+    {
+      "title": "Automation and Editing Envelopes",
+      "number": "25",
+      "view": "sets",
+      "total": 15,
+      "authored": 15,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Clip Envelopes",
+      "number": "26",
+      "view": "clips",
+      "total": 19,
+      "authored": 19,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Working with Video",
+      "number": "27",
+      "view": "sets",
+      "total": 10,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 9
+    },
+    {
+      "title": "Live Audio Effect Reference",
+      "number": "28",
+      "view": "devices",
+      "total": 158,
+      "authored": 43,
+      "shortcutTables": 0,
+      "referenceOnly": 115
+    },
+    {
+      "title": "Live MIDI Effect Reference",
+      "number": "29",
+      "view": "devices",
+      "total": 9,
+      "authored": 9,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Live Instrument Reference",
+      "number": "30",
+      "view": "devices",
+      "total": 153,
+      "authored": 28,
+      "shortcutTables": 0,
+      "referenceOnly": 125
+    },
+    {
+      "title": "Max for Live",
+      "number": "31",
+      "view": "devices",
+      "total": 7,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 6
+    },
+    {
+      "title": "Max for Live Devices",
+      "number": "32",
+      "view": "devices",
+      "total": 25,
+      "authored": 19,
+      "shortcutTables": 0,
+      "referenceOnly": 6
+    },
+    {
+      "title": "MIDI and Key Remote Control",
+      "number": "33",
+      "view": "workspace",
+      "total": 14,
+      "authored": 2,
+      "shortcutTables": 0,
+      "referenceOnly": 12
+    },
+    {
+      "title": "Using Push 1",
+      "number": "34",
+      "view": "workspace",
+      "total": 46,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 45
+    },
+    {
+      "title": "Using Push 2",
+      "number": "35",
+      "view": "workspace",
+      "total": 48,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 47
+    },
+    {
+      "title": "Synchronizing with Link, Tempo Follower, and MIDI",
+      "number": "36",
+      "view": "sets",
+      "total": 12,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 11
+    },
+    {
+      "title": "Computer Audio Resources and Strategies",
+      "number": "37",
+      "view": "workspace",
+      "total": 7,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 6
+    },
+    {
+      "title": "Audio Fact Sheet",
+      "number": "38",
+      "view": "sets",
+      "total": 26,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 25
+    },
+    {
+      "title": "MIDI Fact Sheet",
+      "number": "39",
+      "view": "workspace",
+      "total": 7,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 6
+    },
+    {
+      "title": "Accessibility and Keyboard Navigation",
+      "number": "40",
+      "view": "workspace",
+      "total": 22,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 21
+    },
+    {
+      "title": "Live Keyboard Shortcuts",
+      "number": "41",
+      "view": "workspace",
+      "total": 32,
+      "authored": 8,
+      "shortcutTables": 24,
+      "referenceOnly": 0
+    },
+    {
+      "title": "Credits",
+      "number": "42",
+      "view": "origins",
+      "total": 1,
+      "authored": 1,
+      "shortcutTables": 0,
+      "referenceOnly": 0
+    }
+  ],
+  "pendingGuides": [
+    {
+      "key": "welcome-to-live#the-ableton-team-says-thank-you",
+      "title": "The Ableton Team Says: Thank You",
+      "section": "1.1",
+      "view": "origins",
+      "url": "https://www.ableton.com/en/live-manual/12/welcome-to-live/#the-ableton-team-says-thank-you"
+    },
+    {
+      "key": "live-concepts#the-control-bar",
+      "title": "The Control Bar",
+      "section": "3.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#the-control-bar"
+    },
+    {
+      "key": "live-concepts#the-status-bar",
+      "title": "The Status Bar",
+      "section": "3.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#the-status-bar"
+    },
+    {
+      "key": "live-concepts#the-browser",
+      "title": "The Browser",
+      "section": "3.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#the-browser"
+    },
+    {
+      "key": "live-concepts#sound-similarity",
+      "title": "Sound Similarity",
+      "section": "3.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#sound-similarity"
+    },
+    {
+      "key": "live-concepts#live-sets",
+      "title": "Live Sets",
+      "section": "3.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#live-sets"
+    },
+    {
+      "key": "live-concepts#tracks",
+      "title": "Tracks",
+      "section": "3.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#tracks"
+    },
+    {
+      "key": "live-concepts#audio-clips-and-samples",
+      "title": "Audio Clips and Samples",
+      "section": "3.9",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#audio-clips-and-samples"
+    },
+    {
+      "key": "live-concepts#midi-clips-and-midi-files",
+      "title": "MIDI Clips and MIDI Files",
+      "section": "3.10",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#midi-clips-and-midi-files"
+    },
+    {
+      "key": "live-concepts#devices",
+      "title": "Devices",
+      "section": "3.11",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#devices"
+    },
+    {
+      "key": "live-concepts#clip-and-device-view",
+      "title": "Clip and Device View",
+      "section": "3.12",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#clip-and-device-view"
+    },
+    {
+      "key": "live-concepts#scale-awareness",
+      "title": "Scale Awareness",
+      "section": "3.13",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#scale-awareness"
+    },
+    {
+      "key": "live-concepts#the-mixer",
+      "title": "The Mixer",
+      "section": "3.14",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#the-mixer"
+    },
+    {
+      "key": "live-concepts#presets-and-racks",
+      "title": "Presets and Racks",
+      "section": "3.15",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#presets-and-racks"
+    },
+    {
+      "key": "live-concepts#routing",
+      "title": "Routing",
+      "section": "3.16",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#routing"
+    },
+    {
+      "key": "live-concepts#recording-new-clips",
+      "title": "Recording New Clips",
+      "section": "3.17",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#recording-new-clips"
+    },
+    {
+      "key": "live-concepts#automation-envelopes",
+      "title": "Automation Envelopes",
+      "section": "3.18",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#automation-envelopes"
+    },
+    {
+      "key": "live-concepts#clip-envelopes",
+      "title": "Clip Envelopes",
+      "section": "3.19",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#clip-envelopes"
+    },
+    {
+      "key": "live-concepts#midi-and-key-remote",
+      "title": "MIDI and Key Remote",
+      "section": "3.20",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#midi-and-key-remote"
+    },
+    {
+      "key": "live-concepts#saving-and-exporting",
+      "title": "Saving and Exporting",
+      "section": "3.21",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/live-concepts/#saving-and-exporting"
+    },
+    {
+      "key": "midi-tools#using-midi-tools",
+      "title": "Using MIDI Tools",
+      "section": "11.1",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-tools/#using-midi-tools"
+    },
+    {
+      "key": "midi-tools#using-max-for-live-midi-tools",
+      "title": "Using Max for Live MIDI Tools",
+      "section": "11.1.1",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-tools/#using-max-for-live-midi-tools"
+    },
+    {
+      "key": "midi-tools#transformation-tools",
+      "title": "Transformation Tools",
+      "section": "11.2",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-tools/#transformation-tools"
+    },
+    {
+      "key": "midi-tools#generative-tools",
+      "title": "Generative Tools",
+      "section": "11.3",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-tools/#generative-tools"
+    },
+    {
+      "key": "editing-mpe#viewing-mpe-data",
+      "title": "Viewing MPE Data",
+      "section": "12.1",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#viewing-mpe-data"
+    },
+    {
+      "key": "editing-mpe#editing-mpe-data",
+      "title": "Editing MPE Data",
+      "section": "12.2",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#editing-mpe-data"
+    },
+    {
+      "key": "editing-mpe#drawing-envelopes",
+      "title": "Drawing Envelopes",
+      "section": "12.3",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#drawing-envelopes"
+    },
+    {
+      "key": "editing-mpe#mpe-in-lives-devices-and-on-push-2",
+      "title": "MPE in Live’s Devices and on Push 2",
+      "section": "12.4",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#mpe-in-lives-devices-and-on-push-2"
+    },
+    {
+      "key": "editing-mpe#mpe-in-external-plug-ins",
+      "title": "MPE in External Plug-ins",
+      "section": "12.5",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#mpe-in-external-plug-ins"
+    },
+    {
+      "key": "editing-mpe#mpemulti-channel-settings",
+      "title": "MPE/Multi-channel Settings",
+      "section": "12.6",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#mpemulti-channel-settings"
+    },
+    {
+      "key": "editing-mpe#accessing-the-mpemulti-channel-settings-dialog",
+      "title": "Accessing the MPE/Multi-channel Settings Dialog",
+      "section": "12.6.1",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#accessing-the-mpemulti-channel-settings-dialog"
+    },
+    {
+      "key": "editing-mpe#the-mpemulti-channel-settings-dialog",
+      "title": "The MPE/Multi-Channel Settings Dialog",
+      "section": "12.6.2",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/editing-mpe/#the-mpemulti-channel-settings-dialog"
+    },
+    {
+      "key": "using-tuning-systems#loading-a-tuning-system",
+      "title": "Loading a Tuning System",
+      "section": "15.1",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/using-tuning-systems/#loading-a-tuning-system"
+    },
+    {
+      "key": "using-tuning-systems#the-tuning-section",
+      "title": "The Tuning Section",
+      "section": "15.2",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/using-tuning-systems/#the-tuning-section"
+    },
+    {
+      "key": "using-tuning-systems#midi-track-options-for-tuning-systems",
+      "title": "MIDI Track Options for Tuning Systems",
+      "section": "15.3",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/using-tuning-systems/#midi-track-options-for-tuning-systems"
+    },
+    {
+      "key": "using-tuning-systems#bypass-tuning",
+      "title": "Bypass Tuning",
+      "section": "15.3.1",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/using-tuning-systems/#bypass-tuning"
+    },
+    {
+      "key": "using-tuning-systems#midi-controller-layouts",
+      "title": "MIDI Controller Layouts",
+      "section": "15.3.2",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/using-tuning-systems/#midi-controller-layouts"
+    },
+    {
+      "key": "using-tuning-systems#learn-more-about-tuning-systems",
+      "title": "Learn More About Tuning Systems",
+      "section": "15.4",
+      "view": "clips",
+      "url": "https://www.ableton.com/en/live-manual/12/using-tuning-systems/#learn-more-about-tuning-systems"
+    },
+    {
+      "key": "working-with-instruments-and-effects#device-title-bar",
+      "title": "Device Title Bar",
+      "section": "23.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#device-title-bar"
+    },
+    {
+      "key": "working-with-instruments-and-effects#device-ab-comparison",
+      "title": "Device A/B Comparison",
+      "section": "23.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#device-ab-comparison"
+    },
+    {
+      "key": "working-with-instruments-and-effects#live-device-presets",
+      "title": "Live Device Presets",
+      "section": "23.2.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#live-device-presets"
+    },
+    {
+      "key": "working-with-instruments-and-effects#hot-swapping-presets",
+      "title": "Hot-Swapping Presets",
+      "section": "23.2.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#hot-swapping-presets"
+    },
+    {
+      "key": "working-with-instruments-and-effects#hot-swapping-samples",
+      "title": "Hot-Swapping Samples",
+      "section": "23.2.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#hot-swapping-samples"
+    },
+    {
+      "key": "working-with-instruments-and-effects#saving-presets",
+      "title": "Saving Presets",
+      "section": "23.2.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#saving-presets"
+    },
+    {
+      "key": "working-with-instruments-and-effects#default-presets",
+      "title": "Default Presets",
+      "section": "23.2.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#default-presets"
+    },
+    {
+      "key": "working-with-instruments-and-effects#using-plug-ins",
+      "title": "Using Plug-Ins",
+      "section": "23.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#using-plug-ins"
+    },
+    {
+      "key": "working-with-instruments-and-effects#plug-ins-in-the-device-view",
+      "title": "Plug-Ins in the Device View",
+      "section": "23.3.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#plug-ins-in-the-device-view"
+    },
+    {
+      "key": "working-with-instruments-and-effects#showing-plug-in-panels-in-separate-windows",
+      "title": "Showing Plug-In Panels in Separate Windows",
+      "section": "23.3.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#showing-plug-in-panels-in-separate-windows"
+    },
+    {
+      "key": "working-with-instruments-and-effects#plug-in-configure-mode",
+      "title": "Plug-In Configure Mode",
+      "section": "23.3.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#plug-in-configure-mode"
+    },
+    {
+      "key": "working-with-instruments-and-effects#sidechain-parameters",
+      "title": "Sidechain Parameters",
+      "section": "23.3.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#sidechain-parameters"
+    },
+    {
+      "key": "working-with-instruments-and-effects#vst-plug-ins",
+      "title": "VST Plug-Ins",
+      "section": "23.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#vst-plug-ins"
+    },
+    {
+      "key": "working-with-instruments-and-effects#the-vst-plug-in-folder",
+      "title": "The VST Plug-In Folder",
+      "section": "23.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#the-vst-plug-in-folder"
+    },
+    {
+      "key": "working-with-instruments-and-effects#vst-presets-and-banks",
+      "title": "VST Presets and Banks",
+      "section": "23.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#vst-presets-and-banks"
+    },
+    {
+      "key": "working-with-instruments-and-effects#audio-units-plug-ins",
+      "title": "Audio Units Plug-Ins",
+      "section": "23.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#audio-units-plug-ins"
+    },
+    {
+      "key": "working-with-instruments-and-effects#device-delay-compensation",
+      "title": "Device Delay Compensation",
+      "section": "23.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-instruments-and-effects/#device-delay-compensation"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#an-overview-of-racks",
+      "title": "An Overview of Racks",
+      "section": "24.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#an-overview-of-racks"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#macro-controls",
+      "title": "Macro Controls",
+      "section": "24.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#macro-controls"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#looking-at-racks",
+      "title": "Looking at Racks",
+      "section": "24.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#looking-at-racks"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#chain-list",
+      "title": "Chain List",
+      "section": "24.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#chain-list"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#auto-select",
+      "title": "Auto Select",
+      "section": "24.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#auto-select"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#zones",
+      "title": "Zones",
+      "section": "24.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#zones"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#signal-flow-through-zones",
+      "title": "Signal Flow through Zones",
+      "section": "24.5.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#signal-flow-through-zones"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#key-zones",
+      "title": "Key Zones",
+      "section": "24.5.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#key-zones"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#velocity-zones",
+      "title": "Velocity Zones",
+      "section": "24.5.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#velocity-zones"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#chain-select-zones",
+      "title": "Chain Select Zones",
+      "section": "24.5.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#chain-select-zones"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#making-preset-banks-using-chain-select",
+      "title": "Making Preset Banks Using Chain Select",
+      "section": "24.5.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#making-preset-banks-using-chain-select"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#crossfading-preset-banks-using-fade-ranges",
+      "title": "Crossfading Preset Banks Using Fade Ranges",
+      "section": "24.5.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#crossfading-preset-banks-using-fade-ranges"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#pad-view",
+      "title": "Pad View",
+      "section": "24.6.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#pad-view"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#using-the-macro-controls",
+      "title": "Using the Macro Controls",
+      "section": "24.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#using-the-macro-controls"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#map-mode",
+      "title": "Map Mode",
+      "section": "24.7.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#map-mode"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#randomizing-macro-controls",
+      "title": "Randomizing Macro Controls",
+      "section": "24.7.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#randomizing-macro-controls"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#macro-control-variations",
+      "title": "Macro Control Variations",
+      "section": "24.7.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#macro-control-variations"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#mixing-with-racks",
+      "title": "Mixing With Racks",
+      "section": "24.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#mixing-with-racks"
+    },
+    {
+      "key": "instrument-drum-and-effect-racks#extracting-chains",
+      "title": "Extracting Chains",
+      "section": "24.8.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#extracting-chains"
+    },
+    {
+      "key": "working-with-video#importing-video",
+      "title": "Importing Video",
+      "section": "27.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#importing-video"
+    },
+    {
+      "key": "working-with-video#the-appearance-of-video-in-live",
+      "title": "The Appearance of Video in Live",
+      "section": "27.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#the-appearance-of-video-in-live"
+    },
+    {
+      "key": "working-with-video#video-clips-in-the-arrangement-view",
+      "title": "Video Clips in the Arrangement View",
+      "section": "27.2.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#video-clips-in-the-arrangement-view"
+    },
+    {
+      "key": "working-with-video#the-video-window",
+      "title": "The Video Window",
+      "section": "27.2.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#the-video-window"
+    },
+    {
+      "key": "working-with-video#movies-with-partial-tracks",
+      "title": "Movies with Partial Tracks",
+      "section": "27.2.2.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#movies-with-partial-tracks"
+    },
+    {
+      "key": "working-with-video#clip-view",
+      "title": "Clip View",
+      "section": "27.2.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#clip-view"
+    },
+    {
+      "key": "working-with-video#warp-markers",
+      "title": "Warp Markers",
+      "section": "27.2.3.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#warp-markers"
+    },
+    {
+      "key": "working-with-video#matching-sound-to-video",
+      "title": "Matching Sound to Video",
+      "section": "27.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#matching-sound-to-video"
+    },
+    {
+      "key": "working-with-video#video-trimming-tricks",
+      "title": "Video Trimming Tricks",
+      "section": "27.4",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/working-with-video/#video-trimming-tricks"
+    },
+    {
+      "key": "live-audio-effect-reference#amp-tips",
+      "title": "Amp Tips",
+      "section": "28.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#amp-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#amps-and-cabinets",
+      "title": "Amps and Cabinets",
+      "section": "28.1.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#amps-and-cabinets"
+    },
+    {
+      "key": "live-audio-effect-reference#electricity",
+      "title": "Electricity",
+      "section": "28.1.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#electricity"
+    },
+    {
+      "key": "live-audio-effect-reference#more-than-guitars",
+      "title": "More than Guitars",
+      "section": "28.1.1.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#more-than-guitars"
+    },
+    {
+      "key": "live-audio-effect-reference#filter-types",
+      "title": "Filter Types",
+      "section": "28.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#filter-types"
+    },
+    {
+      "key": "live-audio-effect-reference#filter-display",
+      "title": "Filter Display",
+      "section": "28.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#filter-display"
+    },
+    {
+      "key": "live-audio-effect-reference#lfo-controls",
+      "title": "LFO Controls",
+      "section": "28.2.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#lfo-controls"
+    },
+    {
+      "key": "live-audio-effect-reference#envelope-follower-controls",
+      "title": "Envelope Follower Controls",
+      "section": "28.2.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#envelope-follower-controls"
+    },
+    {
+      "key": "live-audio-effect-reference#filter-drive-and-circuits",
+      "title": "Filter Drive and Circuits",
+      "section": "28.2.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#filter-drive-and-circuits"
+    },
+    {
+      "key": "live-audio-effect-reference#global-controls",
+      "title": "Global Controls",
+      "section": "28.2.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-controls"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters",
+      "title": "Sidechain Parameters",
+      "section": "28.2.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters"
+    },
+    {
+      "key": "live-audio-effect-reference#mono-sidechain",
+      "title": "Mono Sidechain",
+      "section": "28.2.7.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#mono-sidechain"
+    },
+    {
+      "key": "live-audio-effect-reference#input-section",
+      "title": "Input Section",
+      "section": "28.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#input-section"
+    },
+    {
+      "key": "live-audio-effect-reference#midi-input",
+      "title": "MIDI Input",
+      "section": "28.4.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#midi-input"
+    },
+    {
+      "key": "live-audio-effect-reference#quantizer-tab",
+      "title": "Quantizer Tab",
+      "section": "28.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#quantizer-tab"
+    },
+    {
+      "key": "live-audio-effect-reference#midi-tab",
+      "title": "MIDI Tab",
+      "section": "28.4.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#midi-tab"
+    },
+    {
+      "key": "live-audio-effect-reference#lfo-tab",
+      "title": "LFO Tab",
+      "section": "28.4.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#lfo-tab"
+    },
+    {
+      "key": "live-audio-effect-reference#pitch-section",
+      "title": "Pitch Section",
+      "section": "28.4.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#pitch-section"
+    },
+    {
+      "key": "live-audio-effect-reference#vibrato-section",
+      "title": "Vibrato Section",
+      "section": "28.4.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#vibrato-section"
+    },
+    {
+      "key": "live-audio-effect-reference#cabinet-tips",
+      "title": "Cabinet Tips",
+      "section": "28.6.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#cabinet-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#amps-and-cabinets-1",
+      "title": "Amps and Cabinets",
+      "section": "28.6.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#amps-and-cabinets-1"
+    },
+    {
+      "key": "live-audio-effect-reference#multiple-mics",
+      "title": "Multiple mics",
+      "section": "28.6.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#multiple-mics"
+    },
+    {
+      "key": "live-audio-effect-reference#channel-eq-tips",
+      "title": "Channel EQ Tips",
+      "section": "28.7.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#channel-eq-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#chorus-ensemble-tips",
+      "title": "Chorus-Ensemble Tips",
+      "section": "28.8.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#chorus-ensemble-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters-1",
+      "title": "Sidechain Parameters",
+      "section": "28.9.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters-1"
+    },
+    {
+      "key": "live-audio-effect-reference#compressor-tips",
+      "title": "Compressor Tips",
+      "section": "28.9.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#compressor-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#mixing-a-voiceover",
+      "title": "Mixing a Voiceover",
+      "section": "28.9.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#mixing-a-voiceover"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechaining-in-dance-music",
+      "title": "Sidechaining in Dance Music",
+      "section": "28.9.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechaining-in-dance-music"
+    },
+    {
+      "key": "live-audio-effect-reference#resonator-parameters",
+      "title": "Resonator Parameters",
+      "section": "28.10.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#resonator-parameters"
+    },
+    {
+      "key": "live-audio-effect-reference#lfo-section",
+      "title": "LFO Section",
+      "section": "28.10.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#lfo-section"
+    },
+    {
+      "key": "live-audio-effect-reference#filter-section",
+      "title": "Filter Section",
+      "section": "28.10.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#filter-section"
+    },
+    {
+      "key": "live-audio-effect-reference#global-parameters",
+      "title": "Global Parameters",
+      "section": "28.10.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-parameters"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters-2",
+      "title": "Sidechain Parameters",
+      "section": "28.10.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters-2"
+    },
+    {
+      "key": "live-audio-effect-reference#context-menu-options-for-delay",
+      "title": "Context Menu Options for Delay",
+      "section": "28.11.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#context-menu-options-for-delay"
+    },
+    {
+      "key": "live-audio-effect-reference#delay-tips",
+      "title": "Delay Tips",
+      "section": "28.11.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#delay-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#glitch-effect",
+      "title": "Glitch Effect",
+      "section": "28.11.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#glitch-effect"
+    },
+    {
+      "key": "live-audio-effect-reference#chorus-effect",
+      "title": "Chorus Effect",
+      "section": "28.11.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#chorus-effect"
+    },
+    {
+      "key": "live-audio-effect-reference#mid-high-frequency-shaping",
+      "title": "Mid-High Frequency Shaping",
+      "section": "28.12.0.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#mid-high-frequency-shaping"
+    },
+    {
+      "key": "live-audio-effect-reference#low-end-enhancement",
+      "title": "Low-End Enhancement",
+      "section": "28.12.0.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#low-end-enhancement"
+    },
+    {
+      "key": "live-audio-effect-reference#output",
+      "title": "Output",
+      "section": "28.12.0.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#output"
+    },
+    {
+      "key": "live-audio-effect-reference#echo-tab",
+      "title": "Echo Tab",
+      "section": "28.14.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#echo-tab"
+    },
+    {
+      "key": "live-audio-effect-reference#modulation-tab",
+      "title": "Modulation Tab",
+      "section": "28.14.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#modulation-tab"
+    },
+    {
+      "key": "live-audio-effect-reference#character-tab",
+      "title": "Character Tab",
+      "section": "28.14.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#character-tab"
+    },
+    {
+      "key": "live-audio-effect-reference#global-controls-1",
+      "title": "Global Controls",
+      "section": "28.14.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-controls-1"
+    },
+    {
+      "key": "live-audio-effect-reference#context-menu-options-for-eq-eight",
+      "title": "Context Menu Options for EQ Eight",
+      "section": "28.15.0.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#context-menu-options-for-eq-eight"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters-3",
+      "title": "Sidechain Parameters",
+      "section": "28.21.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters-3"
+    },
+    {
+      "key": "live-audio-effect-reference#context-menu-options-for-glue-compressor",
+      "title": "Context Menu Options for Glue Compressor",
+      "section": "28.21.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#context-menu-options-for-glue-compressor"
+    },
+    {
+      "key": "live-audio-effect-reference#signal-flow",
+      "title": "Signal Flow",
+      "section": "28.23.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#signal-flow"
+    },
+    {
+      "key": "live-audio-effect-reference#input-section-1",
+      "title": "Input Section",
+      "section": "28.23.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#input-section-1"
+    },
+    {
+      "key": "live-audio-effect-reference#convolution-reverb-engine",
+      "title": "Convolution Reverb Engine",
+      "section": "28.23.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#convolution-reverb-engine"
+    },
+    {
+      "key": "live-audio-effect-reference#algorithmic-reverb-engine",
+      "title": "Algorithmic Reverb Engine",
+      "section": "28.23.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#algorithmic-reverb-engine"
+    },
+    {
+      "key": "live-audio-effect-reference#dark-hall",
+      "title": "Dark Hall",
+      "section": "28.23.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#dark-hall"
+    },
+    {
+      "key": "live-audio-effect-reference#quartz",
+      "title": "Quartz",
+      "section": "28.23.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#quartz"
+    },
+    {
+      "key": "live-audio-effect-reference#shimmer",
+      "title": "Shimmer",
+      "section": "28.23.4.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#shimmer"
+    },
+    {
+      "key": "live-audio-effect-reference#tides",
+      "title": "Tides",
+      "section": "28.23.4.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#tides"
+    },
+    {
+      "key": "live-audio-effect-reference#prism",
+      "title": "Prism",
+      "section": "28.23.4.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#prism"
+    },
+    {
+      "key": "live-audio-effect-reference#eq-section",
+      "title": "EQ Section",
+      "section": "28.23.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#eq-section"
+    },
+    {
+      "key": "live-audio-effect-reference#output-section",
+      "title": "Output Section",
+      "section": "28.23.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#output-section"
+    },
+    {
+      "key": "live-audio-effect-reference#feedback-routing",
+      "title": "Feedback Routing",
+      "section": "28.25.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#feedback-routing"
+    },
+    {
+      "key": "live-audio-effect-reference#dynamics-processing-theory",
+      "title": "Dynamics Processing Theory",
+      "section": "28.26.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#dynamics-processing-theory"
+    },
+    {
+      "key": "live-audio-effect-reference#interface-and-controls",
+      "title": "Interface and Controls",
+      "section": "28.26.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#interface-and-controls"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters-4",
+      "title": "Sidechain Parameters",
+      "section": "28.26.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters-4"
+    },
+    {
+      "key": "live-audio-effect-reference#multiband-dynamics-tips",
+      "title": "Multiband Dynamics Tips",
+      "section": "28.26.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#multiband-dynamics-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#basic-multiband-compression",
+      "title": "Basic Multiband Compression",
+      "section": "28.26.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#basic-multiband-compression"
+    },
+    {
+      "key": "live-audio-effect-reference#de-essing",
+      "title": "De-essing",
+      "section": "28.26.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#de-essing"
+    },
+    {
+      "key": "live-audio-effect-reference#uncompression",
+      "title": "Uncompression",
+      "section": "28.26.4.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#uncompression"
+    },
+    {
+      "key": "live-audio-effect-reference#pedal-tips",
+      "title": "Pedal Tips",
+      "section": "28.28.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#pedal-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#positioning-pedal-in-the-device-chain",
+      "title": "Positioning Pedal in the Device Chain",
+      "section": "28.28.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#positioning-pedal-in-the-device-chain"
+    },
+    {
+      "key": "live-audio-effect-reference#techno-kick",
+      "title": "Techno Kick",
+      "section": "28.28.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#techno-kick"
+    },
+    {
+      "key": "live-audio-effect-reference#drum-group-fizzle",
+      "title": "Drum Group Fizzle",
+      "section": "28.28.1.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#drum-group-fizzle"
+    },
+    {
+      "key": "live-audio-effect-reference#broken-speaker",
+      "title": "Broken Speaker",
+      "section": "28.28.1.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#broken-speaker"
+    },
+    {
+      "key": "live-audio-effect-reference#sub-warmer",
+      "title": "Sub Warmer",
+      "section": "28.28.1.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sub-warmer"
+    },
+    {
+      "key": "live-audio-effect-reference#downsampling",
+      "title": "Downsampling",
+      "section": "28.30.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#downsampling"
+    },
+    {
+      "key": "live-audio-effect-reference#bit-reduction",
+      "title": "Bit Reduction",
+      "section": "28.30.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#bit-reduction"
+    },
+    {
+      "key": "live-audio-effect-reference#input-filter",
+      "title": "Input Filter",
+      "section": "28.32.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#input-filter"
+    },
+    {
+      "key": "live-audio-effect-reference#early-reflections",
+      "title": "Early Reflections",
+      "section": "28.32.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#early-reflections"
+    },
+    {
+      "key": "live-audio-effect-reference#diffusion-network",
+      "title": "Diffusion Network",
+      "section": "28.32.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#diffusion-network"
+    },
+    {
+      "key": "live-audio-effect-reference#chorus",
+      "title": "Chorus",
+      "section": "28.32.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#chorus"
+    },
+    {
+      "key": "live-audio-effect-reference#global-settings",
+      "title": "Global Settings",
+      "section": "28.32.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-settings"
+    },
+    {
+      "key": "live-audio-effect-reference#output-1",
+      "title": "Output",
+      "section": "28.32.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#output-1"
+    },
+    {
+      "key": "live-audio-effect-reference#input-section-2",
+      "title": "Input Section",
+      "section": "28.33.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#input-section-2"
+    },
+    {
+      "key": "live-audio-effect-reference#gain-stage-section",
+      "title": "Gain Stage Section",
+      "section": "28.33.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#gain-stage-section"
+    },
+    {
+      "key": "live-audio-effect-reference#modulation-section",
+      "title": "Modulation Section",
+      "section": "28.33.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#modulation-section"
+    },
+    {
+      "key": "live-audio-effect-reference#feedback-section",
+      "title": "Feedback Section",
+      "section": "28.33.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#feedback-section"
+    },
+    {
+      "key": "live-audio-effect-reference#global-section",
+      "title": "Global Section",
+      "section": "28.33.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-section"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters-5",
+      "title": "Sidechain Parameters",
+      "section": "28.33.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters-5"
+    },
+    {
+      "key": "live-audio-effect-reference#saturators-waveshaper-controls",
+      "title": "Saturator’s Waveshaper Controls",
+      "section": "28.34.0.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#saturators-waveshaper-controls"
+    },
+    {
+      "key": "live-audio-effect-reference#context-menu-options-for-saturator",
+      "title": "Context Menu Options for Saturator",
+      "section": "28.34.0.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#context-menu-options-for-saturator"
+    },
+    {
+      "key": "live-audio-effect-reference#tuning-and-delay-section",
+      "title": "Tuning and Delay Section",
+      "section": "28.35.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#tuning-and-delay-section"
+    },
+    {
+      "key": "live-audio-effect-reference#lfo-section-1",
+      "title": "LFO Section",
+      "section": "28.35.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#lfo-section-1"
+    },
+    {
+      "key": "live-audio-effect-reference#envelope-follower-section",
+      "title": "Envelope Follower Section",
+      "section": "28.35.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#envelope-follower-section"
+    },
+    {
+      "key": "live-audio-effect-reference#shifter-mode-section",
+      "title": "Shifter Mode Section",
+      "section": "28.35.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#shifter-mode-section"
+    },
+    {
+      "key": "live-audio-effect-reference#sidechain-parameters-6",
+      "title": "Sidechain Parameters",
+      "section": "28.35.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#sidechain-parameters-6"
+    },
+    {
+      "key": "live-audio-effect-reference#shifter-tips",
+      "title": "Shifter Tips",
+      "section": "28.35.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#shifter-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#pitch-shifted-drum-layers",
+      "title": "Pitch-shifted Drum Layers",
+      "section": "28.35.6.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#pitch-shifted-drum-layers"
+    },
+    {
+      "key": "live-audio-effect-reference#phasing-effects",
+      "title": "Phasing Effects",
+      "section": "28.35.6.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#phasing-effects"
+    },
+    {
+      "key": "live-audio-effect-reference#tremolo-effects",
+      "title": "Tremolo Effects",
+      "section": "28.35.6.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#tremolo-effects"
+    },
+    {
+      "key": "live-audio-effect-reference#pitch-mode-section",
+      "title": "Pitch Mode Section",
+      "section": "28.36.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#pitch-mode-section"
+    },
+    {
+      "key": "live-audio-effect-reference#frequency-section",
+      "title": "Frequency Section",
+      "section": "28.36.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#frequency-section"
+    },
+    {
+      "key": "live-audio-effect-reference#modulation-section-1",
+      "title": "Modulation Section",
+      "section": "28.36.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#modulation-section-1"
+    },
+    {
+      "key": "live-audio-effect-reference#spectrogram",
+      "title": "Spectrogram",
+      "section": "28.36.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#spectrogram"
+    },
+    {
+      "key": "live-audio-effect-reference#global-parameters-1",
+      "title": "Global Parameters",
+      "section": "28.36.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-parameters-1"
+    },
+    {
+      "key": "live-audio-effect-reference#spectral-resonator-tips",
+      "title": "Spectral Resonator Tips",
+      "section": "28.36.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#spectral-resonator-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#freezer-section",
+      "title": "Freezer Section",
+      "section": "28.37.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#freezer-section"
+    },
+    {
+      "key": "live-audio-effect-reference#delay-section",
+      "title": "Delay Section",
+      "section": "28.37.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#delay-section"
+    },
+    {
+      "key": "live-audio-effect-reference#resolution-section",
+      "title": "Resolution Section",
+      "section": "28.37.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#resolution-section"
+    },
+    {
+      "key": "live-audio-effect-reference#global-controls-2",
+      "title": "Global Controls",
+      "section": "28.37.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#global-controls-2"
+    },
+    {
+      "key": "live-audio-effect-reference#view-switches",
+      "title": "View Switches",
+      "section": "28.39.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#view-switches"
+    },
+    {
+      "key": "live-audio-effect-reference#classic-view",
+      "title": "Classic View",
+      "section": "28.39.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#classic-view"
+    },
+    {
+      "key": "live-audio-effect-reference#histogram-view",
+      "title": "Histogram View",
+      "section": "28.39.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#histogram-view"
+    },
+    {
+      "key": "live-audio-effect-reference#note-spellings",
+      "title": "Note Spellings",
+      "section": "28.39.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#note-spellings"
+    },
+    {
+      "key": "live-audio-effect-reference#reference-slider",
+      "title": "Reference Slider",
+      "section": "28.39.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#reference-slider"
+    },
+    {
+      "key": "live-audio-effect-reference#vocoder-tips",
+      "title": "Vocoder Tips",
+      "section": "28.42.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#vocoder-tips"
+    },
+    {
+      "key": "live-audio-effect-reference#singing-synthesizer",
+      "title": "Singing Synthesizer",
+      "section": "28.42.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#singing-synthesizer"
+    },
+    {
+      "key": "live-audio-effect-reference#formant-shifter",
+      "title": "Formant Shifter",
+      "section": "28.42.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#formant-shifter"
+    },
+    {
+      "key": "live-instrument-reference#architecture-and-interface",
+      "title": "Architecture and Interface",
+      "section": "30.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#architecture-and-interface"
+    },
+    {
+      "key": "live-instrument-reference#oscillators",
+      "title": "Oscillators",
+      "section": "30.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#oscillators"
+    },
+    {
+      "key": "live-instrument-reference#noise-generator",
+      "title": "Noise Generator",
+      "section": "30.1.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#noise-generator"
+    },
+    {
+      "key": "live-instrument-reference#filters",
+      "title": "Filters",
+      "section": "30.1.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filters"
+    },
+    {
+      "key": "live-instrument-reference#amplifiers",
+      "title": "Amplifiers",
+      "section": "30.1.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#amplifiers"
+    },
+    {
+      "key": "live-instrument-reference#envelopes",
+      "title": "Envelopes",
+      "section": "30.1.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#envelopes"
+    },
+    {
+      "key": "live-instrument-reference#lfos",
+      "title": "LFOs",
+      "section": "30.1.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfos"
+    },
+    {
+      "key": "live-instrument-reference#global-parameters",
+      "title": "Global Parameters",
+      "section": "30.1.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-parameters"
+    },
+    {
+      "key": "live-instrument-reference#mpe-sources",
+      "title": "MPE Sources",
+      "section": "30.1.9",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#mpe-sources"
+    },
+    {
+      "key": "live-instrument-reference#architecture-and-interface-1",
+      "title": "Architecture and Interface",
+      "section": "30.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#architecture-and-interface-1"
+    },
+    {
+      "key": "live-instrument-reference#mallet-section",
+      "title": "Mallet Section",
+      "section": "30.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#mallet-section"
+    },
+    {
+      "key": "live-instrument-reference#noise-section",
+      "title": "Noise Section",
+      "section": "30.2.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#noise-section"
+    },
+    {
+      "key": "live-instrument-reference#resonator-tabs",
+      "title": "Resonator Tabs",
+      "section": "30.2.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#resonator-tabs"
+    },
+    {
+      "key": "live-instrument-reference#tuning-section",
+      "title": "Tuning Section",
+      "section": "30.2.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#tuning-section"
+    },
+    {
+      "key": "live-instrument-reference#mixer-section",
+      "title": "Mixer Section",
+      "section": "30.2.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#mixer-section"
+    },
+    {
+      "key": "live-instrument-reference#lfo-tab",
+      "title": "LFO Tab",
+      "section": "30.2.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfo-tab"
+    },
+    {
+      "key": "live-instrument-reference#midimpe-tab",
+      "title": "MIDI/MPE Tab",
+      "section": "30.2.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#midimpe-tab"
+    },
+    {
+      "key": "live-instrument-reference#the-global-section",
+      "title": "The Global Section",
+      "section": "30.2.6.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-global-section"
+    },
+    {
+      "key": "live-instrument-reference#sound-design-tips",
+      "title": "Sound Design Tips",
+      "section": "30.2.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sound-design-tips"
+    },
+    {
+      "key": "live-instrument-reference#sample-controls-section",
+      "title": "Sample Controls Section",
+      "section": "30.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sample-controls-section"
+    },
+    {
+      "key": "live-instrument-reference#playback-effects-section",
+      "title": "Playback Effects Section",
+      "section": "30.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#playback-effects-section"
+    },
+    {
+      "key": "live-instrument-reference#filter-section-1",
+      "title": "Filter Section",
+      "section": "30.4.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filter-section-1"
+    },
+    {
+      "key": "live-instrument-reference#global-section-1",
+      "title": "Global Section",
+      "section": "30.4.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-section-1"
+    },
+    {
+      "key": "live-instrument-reference#context-menu-options-for-drum-sampler",
+      "title": "Context Menu Options for Drum Sampler",
+      "section": "30.4.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#context-menu-options-for-drum-sampler"
+    },
+    {
+      "key": "live-instrument-reference#architecture-and-interface-2",
+      "title": "Architecture and Interface",
+      "section": "30.5.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#architecture-and-interface-2"
+    },
+    {
+      "key": "live-instrument-reference#hammer-section",
+      "title": "Hammer Section",
+      "section": "30.5.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#hammer-section"
+    },
+    {
+      "key": "live-instrument-reference#fork-section",
+      "title": "Fork Section",
+      "section": "30.5.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#fork-section"
+    },
+    {
+      "key": "live-instrument-reference#damperpickup-section",
+      "title": "Damper/Pickup Section",
+      "section": "30.5.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#damperpickup-section"
+    },
+    {
+      "key": "live-instrument-reference#pickup-parameters",
+      "title": "Pickup Parameters",
+      "section": "30.5.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#pickup-parameters"
+    },
+    {
+      "key": "live-instrument-reference#damper-parameters",
+      "title": "Damper Parameters",
+      "section": "30.5.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#damper-parameters"
+    },
+    {
+      "key": "live-instrument-reference#global-section-2",
+      "title": "Global Section",
+      "section": "30.5.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-section-2"
+    },
+    {
+      "key": "live-instrument-reference#sample-slots",
+      "title": "Sample Slots",
+      "section": "30.7.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sample-slots"
+    },
+    {
+      "key": "live-instrument-reference#start-transpose-and-stretch",
+      "title": "Start, Transpose and Stretch",
+      "section": "30.7.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#start-transpose-and-stretch"
+    },
+    {
+      "key": "live-instrument-reference#filter",
+      "title": "Filter",
+      "section": "30.7.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filter"
+    },
+    {
+      "key": "live-instrument-reference#saturator-and-envelope",
+      "title": "Saturator and Envelope",
+      "section": "30.7.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#saturator-and-envelope"
+    },
+    {
+      "key": "live-instrument-reference#pan-and-volume",
+      "title": "Pan and Volume",
+      "section": "30.7.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#pan-and-volume"
+    },
+    {
+      "key": "live-instrument-reference#global-controls",
+      "title": "Global Controls",
+      "section": "30.7.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-controls"
+    },
+    {
+      "key": "live-instrument-reference#individual-outputs",
+      "title": "Individual Outputs",
+      "section": "30.7.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#individual-outputs"
+    },
+    {
+      "key": "live-instrument-reference#general-overview",
+      "title": "General Overview",
+      "section": "30.8.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#general-overview"
+    },
+    {
+      "key": "live-instrument-reference#oscillators-1",
+      "title": "Oscillators",
+      "section": "30.8.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#oscillators-1"
+    },
+    {
+      "key": "live-instrument-reference#oscillator-macros",
+      "title": "Oscillator Macros",
+      "section": "30.8.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#oscillator-macros"
+    },
+    {
+      "key": "live-instrument-reference#envelopes-tab",
+      "title": "Envelopes Tab",
+      "section": "30.8.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#envelopes-tab"
+    },
+    {
+      "key": "live-instrument-reference#lfos-tab",
+      "title": "LFOs Tab",
+      "section": "30.8.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfos-tab"
+    },
+    {
+      "key": "live-instrument-reference#matrix-tab",
+      "title": "Matrix Tab",
+      "section": "30.8.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#matrix-tab"
+    },
+    {
+      "key": "live-instrument-reference#midi-and-mpe-tabs",
+      "title": "MIDI and MPE Tabs",
+      "section": "30.8.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#midi-and-mpe-tabs"
+    },
+    {
+      "key": "live-instrument-reference#settings-tab",
+      "title": "Settings Tab",
+      "section": "30.8.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#settings-tab"
+    },
+    {
+      "key": "live-instrument-reference#filters-1",
+      "title": "Filters",
+      "section": "30.8.9",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filters-1"
+    },
+    {
+      "key": "live-instrument-reference#mix-section",
+      "title": "Mix Section",
+      "section": "30.8.10",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#mix-section"
+    },
+    {
+      "key": "live-instrument-reference#global-controls-1",
+      "title": "Global Controls",
+      "section": "30.8.11",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-controls-1"
+    },
+    {
+      "key": "live-instrument-reference#general-overview-1",
+      "title": "General Overview",
+      "section": "30.9.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#general-overview-1"
+    },
+    {
+      "key": "live-instrument-reference#oscillator-section-1",
+      "title": "Oscillator Section",
+      "section": "30.9.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#oscillator-section-1"
+    },
+    {
+      "key": "live-instrument-reference#built-in-waveforms",
+      "title": "Built-in Waveforms",
+      "section": "30.9.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#built-in-waveforms"
+    },
+    {
+      "key": "live-instrument-reference#user-waveforms",
+      "title": "User Waveforms",
+      "section": "30.9.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#user-waveforms"
+    },
+    {
+      "key": "live-instrument-reference#more-oscillator-parameters",
+      "title": "More Oscillator Parameters",
+      "section": "30.9.2.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#more-oscillator-parameters"
+    },
+    {
+      "key": "live-instrument-reference#aliasing",
+      "title": "Aliasing",
+      "section": "30.9.2.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#aliasing"
+    },
+    {
+      "key": "live-instrument-reference#lfo-section-1",
+      "title": "LFO Section",
+      "section": "30.9.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfo-section-1"
+    },
+    {
+      "key": "live-instrument-reference#envelopes-1",
+      "title": "Envelopes",
+      "section": "30.9.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#envelopes-1"
+    },
+    {
+      "key": "live-instrument-reference#filter-section-2",
+      "title": "Filter Section",
+      "section": "30.9.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filter-section-2"
+    },
+    {
+      "key": "live-instrument-reference#global-controls-2",
+      "title": "Global Controls",
+      "section": "30.9.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-controls-2"
+    },
+    {
+      "key": "live-instrument-reference#glide-and-spread",
+      "title": "Glide and Spread",
+      "section": "30.9.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#glide-and-spread"
+    },
+    {
+      "key": "live-instrument-reference#strategies-for-saving-cpu-power",
+      "title": "Strategies for Saving CPU Power",
+      "section": "30.9.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#strategies-for-saving-cpu-power"
+    },
+    {
+      "key": "live-instrument-reference#finally",
+      "title": "Finally…",
+      "section": "30.9.9",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#finally"
+    },
+    {
+      "key": "live-instrument-reference#the-complete-parameter-list",
+      "title": "The Complete Parameter List",
+      "section": "30.9.10",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-complete-parameter-list"
+    },
+    {
+      "key": "live-instrument-reference#global-shell-and-display",
+      "title": "Global Shell and Display",
+      "section": "30.9.10.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-shell-and-display"
+    },
+    {
+      "key": "live-instrument-reference#modulation-targets",
+      "title": "Modulation Targets",
+      "section": "30.9.10.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#modulation-targets"
+    },
+    {
+      "key": "live-instrument-reference#pitch-shell-and-display",
+      "title": "Pitch Shell and Display",
+      "section": "30.9.10.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#pitch-shell-and-display"
+    },
+    {
+      "key": "live-instrument-reference#filter-shell-and-display",
+      "title": "Filter Shell and Display",
+      "section": "30.9.10.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filter-shell-and-display"
+    },
+    {
+      "key": "live-instrument-reference#lfo-shell-and-display",
+      "title": "LFO Shell and Display",
+      "section": "30.9.10.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfo-shell-and-display"
+    },
+    {
+      "key": "live-instrument-reference#oscillators-a-d-shell-and-display",
+      "title": "Oscillators A-D Shell and Display",
+      "section": "30.9.10.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#oscillators-a-d-shell-and-display"
+    },
+    {
+      "key": "live-instrument-reference#envelope-display",
+      "title": "Envelope Display",
+      "section": "30.9.10.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#envelope-display"
+    },
+    {
+      "key": "live-instrument-reference#context-menu-options-for-operator",
+      "title": "Context Menu Options for Operator",
+      "section": "30.9.10.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#context-menu-options-for-operator"
+    },
+    {
+      "key": "live-instrument-reference#getting-started-with-sampler",
+      "title": "Getting Started with Sampler",
+      "section": "30.10.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#getting-started-with-sampler"
+    },
+    {
+      "key": "live-instrument-reference#multisampling",
+      "title": "Multisampling",
+      "section": "30.10.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#multisampling"
+    },
+    {
+      "key": "live-instrument-reference#title-bar-options",
+      "title": "Title Bar Options",
+      "section": "30.10.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#title-bar-options"
+    },
+    {
+      "key": "live-instrument-reference#samplers-tabs",
+      "title": "Sampler’s Tabs",
+      "section": "30.10.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#samplers-tabs"
+    },
+    {
+      "key": "live-instrument-reference#the-zone-tab",
+      "title": "The Zone Tab",
+      "section": "30.10.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-zone-tab"
+    },
+    {
+      "key": "live-instrument-reference#round-robin-sample-playback",
+      "title": "Round Robin Sample Playback",
+      "section": "30.10.5.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#round-robin-sample-playback"
+    },
+    {
+      "key": "live-instrument-reference#the-sample-layer-list",
+      "title": "The Sample Layer List",
+      "section": "30.10.5.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-sample-layer-list"
+    },
+    {
+      "key": "live-instrument-reference#key-zones",
+      "title": "Key Zones",
+      "section": "30.10.5.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#key-zones"
+    },
+    {
+      "key": "live-instrument-reference#velocity-zones",
+      "title": "Velocity Zones",
+      "section": "30.10.5.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#velocity-zones"
+    },
+    {
+      "key": "live-instrument-reference#sample-select-zones",
+      "title": "Sample Select Zones",
+      "section": "30.10.5.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sample-select-zones"
+    },
+    {
+      "key": "live-instrument-reference#the-sample-tab",
+      "title": "The Sample Tab",
+      "section": "30.10.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-sample-tab"
+    },
+    {
+      "key": "live-instrument-reference#sample-playback",
+      "title": "Sample Playback",
+      "section": "30.10.6.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sample-playback"
+    },
+    {
+      "key": "live-instrument-reference#the-pitchosc-tab",
+      "title": "The Pitch/Osc Tab",
+      "section": "30.10.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-pitchosc-tab"
+    },
+    {
+      "key": "live-instrument-reference#the-modulation-oscillator-osc",
+      "title": "The Modulation Oscillator (Osc)",
+      "section": "30.10.7.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-modulation-oscillator-osc"
+    },
+    {
+      "key": "live-instrument-reference#the-pitch-envelope",
+      "title": "The Pitch Envelope",
+      "section": "30.10.7.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-pitch-envelope"
+    },
+    {
+      "key": "live-instrument-reference#the-filterglobal-tab",
+      "title": "The Filter/Global Tab",
+      "section": "30.10.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-filterglobal-tab"
+    },
+    {
+      "key": "live-instrument-reference#the-filter",
+      "title": "The Filter",
+      "section": "30.10.8.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-filter"
+    },
+    {
+      "key": "live-instrument-reference#the-volume-envelope-and-global-controls",
+      "title": "The Volume Envelope and Global Controls",
+      "section": "30.10.8.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-volume-envelope-and-global-controls"
+    },
+    {
+      "key": "live-instrument-reference#the-modulation-tab",
+      "title": "The Modulation Tab",
+      "section": "30.10.9",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-modulation-tab"
+    },
+    {
+      "key": "live-instrument-reference#the-auxiliary-envelope",
+      "title": "The Auxiliary Envelope",
+      "section": "30.10.9.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-auxiliary-envelope"
+    },
+    {
+      "key": "live-instrument-reference#lfos-1-2-and-3",
+      "title": "LFOs 1, 2 and 3",
+      "section": "30.10.9.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfos-1-2-and-3"
+    },
+    {
+      "key": "live-instrument-reference#the-midi-tab",
+      "title": "The MIDI Tab",
+      "section": "30.10.10",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-midi-tab"
+    },
+    {
+      "key": "live-instrument-reference#importing-third-party-multisamples",
+      "title": "Importing Third-Party Multisamples",
+      "section": "30.10.11",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#importing-third-party-multisamples"
+    },
+    {
+      "key": "live-instrument-reference#playback-modes",
+      "title": "Playback Modes",
+      "section": "30.11.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#playback-modes"
+    },
+    {
+      "key": "live-instrument-reference#classic-playback-mode",
+      "title": "Classic Playback Mode",
+      "section": "30.11.1.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#classic-playback-mode"
+    },
+    {
+      "key": "live-instrument-reference#one-shot-playback-mode",
+      "title": "One-Shot Playback Mode",
+      "section": "30.11.1.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#one-shot-playback-mode"
+    },
+    {
+      "key": "live-instrument-reference#slicing-playback-mode",
+      "title": "Slicing Playback Mode",
+      "section": "30.11.1.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#slicing-playback-mode"
+    },
+    {
+      "key": "live-instrument-reference#warp-controls",
+      "title": "Warp Controls",
+      "section": "30.11.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#warp-controls"
+    },
+    {
+      "key": "live-instrument-reference#filter-1",
+      "title": "Filter",
+      "section": "30.11.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filter-1"
+    },
+    {
+      "key": "live-instrument-reference#envelopes-2",
+      "title": "Envelopes",
+      "section": "30.11.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#envelopes-2"
+    },
+    {
+      "key": "live-instrument-reference#lfo",
+      "title": "LFO",
+      "section": "30.11.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfo"
+    },
+    {
+      "key": "live-instrument-reference#global-parameters-1",
+      "title": "Global Parameters",
+      "section": "30.11.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-parameters-1"
+    },
+    {
+      "key": "live-instrument-reference#context-menu-options-for-simpler",
+      "title": "Context Menu Options for Simpler",
+      "section": "30.11.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#context-menu-options-for-simpler"
+    },
+    {
+      "key": "live-instrument-reference#strategies-for-saving-cpu-power-1",
+      "title": "Strategies for Saving CPU Power",
+      "section": "30.11.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#strategies-for-saving-cpu-power-1"
+    },
+    {
+      "key": "live-instrument-reference#architecture-and-interface-3",
+      "title": "Architecture and Interface",
+      "section": "30.12.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#architecture-and-interface-3"
+    },
+    {
+      "key": "live-instrument-reference#string-tab",
+      "title": "String Tab",
+      "section": "30.12.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#string-tab"
+    },
+    {
+      "key": "live-instrument-reference#the-exciter-section",
+      "title": "The Exciter Section",
+      "section": "30.12.2.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-exciter-section"
+    },
+    {
+      "key": "live-instrument-reference#exciter-types",
+      "title": "Exciter Types",
+      "section": "30.12.2.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#exciter-types"
+    },
+    {
+      "key": "live-instrument-reference#exciter-parameters",
+      "title": "Exciter Parameters",
+      "section": "30.12.2.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#exciter-parameters"
+    },
+    {
+      "key": "live-instrument-reference#the-damper-section",
+      "title": "The Damper Section",
+      "section": "30.12.2.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-damper-section"
+    },
+    {
+      "key": "live-instrument-reference#the-termination-section",
+      "title": "The Termination Section",
+      "section": "30.12.2.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-termination-section"
+    },
+    {
+      "key": "live-instrument-reference#the-pickup-section",
+      "title": "The Pickup Section",
+      "section": "30.12.2.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#the-pickup-section"
+    },
+    {
+      "key": "live-instrument-reference#filterglobal-tab",
+      "title": "Filter/Global Tab",
+      "section": "30.12.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filterglobal-tab"
+    },
+    {
+      "key": "live-instrument-reference#sound-design-tips-1",
+      "title": "Sound Design Tips",
+      "section": "30.12.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sound-design-tips-1"
+    },
+    {
+      "key": "live-instrument-reference#wavetable-synthesis",
+      "title": "Wavetable Synthesis",
+      "section": "30.13.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#wavetable-synthesis"
+    },
+    {
+      "key": "live-instrument-reference#oscillators-2",
+      "title": "Oscillators",
+      "section": "30.13.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#oscillators-2"
+    },
+    {
+      "key": "live-instrument-reference#sub-oscillator",
+      "title": "Sub Oscillator",
+      "section": "30.13.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#sub-oscillator"
+    },
+    {
+      "key": "live-instrument-reference#filters-2",
+      "title": "Filters",
+      "section": "30.13.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#filters-2"
+    },
+    {
+      "key": "live-instrument-reference#matrix-tab-1",
+      "title": "Matrix Tab",
+      "section": "30.13.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#matrix-tab-1"
+    },
+    {
+      "key": "live-instrument-reference#mod-sources-tab",
+      "title": "Mod Sources Tab",
+      "section": "30.13.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#mod-sources-tab"
+    },
+    {
+      "key": "live-instrument-reference#lfos-1",
+      "title": "LFOs",
+      "section": "30.13.6.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#lfos-1"
+    },
+    {
+      "key": "live-instrument-reference#midi-tab",
+      "title": "MIDI Tab",
+      "section": "30.13.7",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#midi-tab"
+    },
+    {
+      "key": "live-instrument-reference#global-and-unison-controls",
+      "title": "Global and Unison Controls",
+      "section": "30.13.8",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#global-and-unison-controls"
+    },
+    {
+      "key": "live-instrument-reference#hi-quality-mode",
+      "title": "Hi-Quality Mode",
+      "section": "30.13.9",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/live-instrument-reference/#hi-quality-mode"
+    },
+    {
+      "key": "max-for-live#setting-up-max-for-live",
+      "title": "Setting Up Max for Live",
+      "section": "31.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live/#setting-up-max-for-live"
+    },
+    {
+      "key": "max-for-live#using-max-for-live-devices",
+      "title": "Using Max for Live Devices",
+      "section": "31.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live/#using-max-for-live-devices"
+    },
+    {
+      "key": "max-for-live#editing-max-for-live-devices",
+      "title": "Editing Max for Live Devices",
+      "section": "31.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live/#editing-max-for-live-devices"
+    },
+    {
+      "key": "max-for-live#building-max-for-live-midi-tools",
+      "title": "Building Max for Live MIDI Tools",
+      "section": "31.4",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live/#building-max-for-live-midi-tools"
+    },
+    {
+      "key": "max-for-live#max-dependencies",
+      "title": "Max Dependencies",
+      "section": "31.5",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live/#max-dependencies"
+    },
+    {
+      "key": "max-for-live#learning-max-programming",
+      "title": "Learning Max Programming",
+      "section": "31.6",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live/#learning-max-programming"
+    },
+    {
+      "key": "max-for-live-devices#max-for-live-instruments",
+      "title": "Max for Live Instruments",
+      "section": "32.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/#max-for-live-instruments"
+    },
+    {
+      "key": "max-for-live-devices#max-for-live-audio-effects",
+      "title": "Max for Live Audio Effects",
+      "section": "32.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/#max-for-live-audio-effects"
+    },
+    {
+      "key": "max-for-live-devices#max-for-live-midi-effects",
+      "title": "Max for Live MIDI Effects",
+      "section": "32.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/#max-for-live-midi-effects"
+    },
+    {
+      "key": "max-for-live-devices#press",
+      "title": "Press",
+      "section": "32.3.4.1",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/#press"
+    },
+    {
+      "key": "max-for-live-devices#slide",
+      "title": "Slide",
+      "section": "32.3.4.2",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/#slide"
+    },
+    {
+      "key": "max-for-live-devices#notepb",
+      "title": "NotePB",
+      "section": "32.3.4.3",
+      "view": "devices",
+      "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/#notepb"
+    },
+    {
+      "key": "midi-and-key-remote-control#natively-supported-control-surfaces",
+      "title": "Natively Supported Control Surfaces",
+      "section": "33.1.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#natively-supported-control-surfaces"
+    },
+    {
+      "key": "midi-and-key-remote-control#instant-mappings",
+      "title": "Instant Mappings",
+      "section": "33.1.1.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#instant-mappings"
+    },
+    {
+      "key": "midi-and-key-remote-control#manual-control-surface-setup",
+      "title": "Manual Control Surface Setup",
+      "section": "33.1.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#manual-control-surface-setup"
+    },
+    {
+      "key": "midi-and-key-remote-control#takeover-mode",
+      "title": "Takeover Mode",
+      "section": "33.1.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#takeover-mode"
+    },
+    {
+      "key": "midi-and-key-remote-control#the-mapping-browser",
+      "title": "The Mapping Browser",
+      "section": "33.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#the-mapping-browser"
+    },
+    {
+      "key": "midi-and-key-remote-control#assigning-midi-remote-control",
+      "title": "Assigning MIDI Remote Control",
+      "section": "33.2.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#assigning-midi-remote-control"
+    },
+    {
+      "key": "midi-and-key-remote-control#mapping-to-midi-notes",
+      "title": "Mapping to MIDI Notes",
+      "section": "33.2.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#mapping-to-midi-notes"
+    },
+    {
+      "key": "midi-and-key-remote-control#mapping-to-absolute-midi-controllers",
+      "title": "Mapping to Absolute MIDI Controllers",
+      "section": "33.2.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#mapping-to-absolute-midi-controllers"
+    },
+    {
+      "key": "midi-and-key-remote-control#mapping-to-relative-midi-controllers",
+      "title": "Mapping to Relative MIDI Controllers",
+      "section": "33.2.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#mapping-to-relative-midi-controllers"
+    },
+    {
+      "key": "midi-and-key-remote-control#relative-session-view-navigation",
+      "title": "Relative Session View Navigation",
+      "section": "33.2.4.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#relative-session-view-navigation"
+    },
+    {
+      "key": "midi-and-key-remote-control#mapping-to-clip-view-controls",
+      "title": "Mapping to Clip View Controls",
+      "section": "33.2.4.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#mapping-to-clip-view-controls"
+    },
+    {
+      "key": "midi-and-key-remote-control#computer-keyboard-remote-control",
+      "title": "Computer Keyboard Remote Control",
+      "section": "33.2.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-and-key-remote-control/#computer-keyboard-remote-control"
+    },
+    {
+      "key": "using-push-1#setup",
+      "title": "Setup",
+      "section": "34.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#setup"
+    },
+    {
+      "key": "using-push-1#browsing-and-loading-sounds",
+      "title": "Browsing and Loading Sounds",
+      "section": "34.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#browsing-and-loading-sounds"
+    },
+    {
+      "key": "using-push-1#playing-and-programming-beats",
+      "title": "Playing and Programming Beats",
+      "section": "34.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#playing-and-programming-beats"
+    },
+    {
+      "key": "using-push-1#loop-selector",
+      "title": "Loop Selector",
+      "section": "34.3.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#loop-selector"
+    },
+    {
+      "key": "using-push-1#16-velocities-mode",
+      "title": "16 Velocities Mode",
+      "section": "34.3.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#16-velocities-mode"
+    },
+    {
+      "key": "using-push-1#64-pad-mode",
+      "title": "64-Pad Mode",
+      "section": "34.3.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#64-pad-mode"
+    },
+    {
+      "key": "using-push-1#loading-individual-drums",
+      "title": "Loading Individual Drums",
+      "section": "34.3.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#loading-individual-drums"
+    },
+    {
+      "key": "using-push-1#additional-pad-options-for-push-1",
+      "title": "Additional Pad Options for Push 1",
+      "section": "34.3.4.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#additional-pad-options-for-push-1"
+    },
+    {
+      "key": "using-push-1#step-sequencing-beats",
+      "title": "Step Sequencing Beats",
+      "section": "34.3.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#step-sequencing-beats"
+    },
+    {
+      "key": "using-push-1#real-time-recording",
+      "title": "Real-time Recording",
+      "section": "34.3.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#real-time-recording"
+    },
+    {
+      "key": "using-push-1#fixed-length-recording",
+      "title": "Fixed Length Recording",
+      "section": "34.3.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#fixed-length-recording"
+    },
+    {
+      "key": "using-push-1#additional-recording-options",
+      "title": "Additional Recording Options",
+      "section": "34.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#additional-recording-options"
+    },
+    {
+      "key": "using-push-1#recording-with-repeat",
+      "title": "Recording with Repeat",
+      "section": "34.4.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#recording-with-repeat"
+    },
+    {
+      "key": "using-push-1#quantizing",
+      "title": "Quantizing",
+      "section": "34.4.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#quantizing"
+    },
+    {
+      "key": "using-push-1#playing-melodies-and-harmonies",
+      "title": "Playing Melodies and Harmonies",
+      "section": "34.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#playing-melodies-and-harmonies"
+    },
+    {
+      "key": "using-push-1#playing-in-other-keys",
+      "title": "Playing in Other Keys",
+      "section": "34.5.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#playing-in-other-keys"
+    },
+    {
+      "key": "using-push-1#step-sequencing-melodies-and-harmonies",
+      "title": "Step Sequencing Melodies and Harmonies",
+      "section": "34.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#step-sequencing-melodies-and-harmonies"
+    },
+    {
+      "key": "using-push-1#adjusting-the-loop-length",
+      "title": "Adjusting the Loop Length",
+      "section": "34.6.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#adjusting-the-loop-length"
+    },
+    {
+      "key": "using-push-1#melodic-sequencer--32-notes",
+      "title": "Melodic Sequencer + 32 Notes",
+      "section": "34.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#melodic-sequencer--32-notes"
+    },
+    {
+      "key": "using-push-1#32-notes",
+      "title": "32 Notes",
+      "section": "34.7.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#32-notes"
+    },
+    {
+      "key": "using-push-1#sequencer",
+      "title": "Sequencer",
+      "section": "34.7.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#sequencer"
+    },
+    {
+      "key": "using-push-1#navigating-in-note-mode",
+      "title": "Navigating in Note Mode",
+      "section": "34.8",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#navigating-in-note-mode"
+    },
+    {
+      "key": "using-push-1#controlling-lives-instruments-and-effects",
+      "title": "Controlling Live’s Instruments and Effects",
+      "section": "34.9",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#controlling-lives-instruments-and-effects"
+    },
+    {
+      "key": "using-push-1#mixing-with-push-1",
+      "title": "Mixing with Push 1",
+      "section": "34.10",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#mixing-with-push-1"
+    },
+    {
+      "key": "using-push-1#recording-automation",
+      "title": "Recording Automation",
+      "section": "34.11",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#recording-automation"
+    },
+    {
+      "key": "using-push-1#step-sequencing-automation",
+      "title": "Step Sequencing Automation",
+      "section": "34.12",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#step-sequencing-automation"
+    },
+    {
+      "key": "using-push-1#note-specific-parameters",
+      "title": "Note-Specific Parameters",
+      "section": "34.12.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#note-specific-parameters"
+    },
+    {
+      "key": "using-push-1#per-step-automation",
+      "title": "Per-Step Automation",
+      "section": "34.12.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#per-step-automation"
+    },
+    {
+      "key": "using-push-1#controlling-lives-session-view",
+      "title": "Controlling Live’s Session View",
+      "section": "34.13",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#controlling-lives-session-view"
+    },
+    {
+      "key": "using-push-1#session-overview",
+      "title": "Session Overview",
+      "section": "34.13.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#session-overview"
+    },
+    {
+      "key": "using-push-1#setting-user-preferences",
+      "title": "Setting User Preferences",
+      "section": "34.14",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#setting-user-preferences"
+    },
+    {
+      "key": "using-push-1#push-1-control-reference",
+      "title": "Push 1 Control Reference",
+      "section": "34.15",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#push-1-control-reference"
+    },
+    {
+      "key": "using-push-1#focusnavigation-section",
+      "title": "Focus/Navigation Section",
+      "section": "34.15.0.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#focusnavigation-section"
+    },
+    {
+      "key": "using-push-1#add-section",
+      "title": "Add Section",
+      "section": "34.15.0.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#add-section"
+    },
+    {
+      "key": "using-push-1#note-section",
+      "title": "Note Section",
+      "section": "34.15.0.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#note-section"
+    },
+    {
+      "key": "using-push-1#state-control-section",
+      "title": "State Control Section",
+      "section": "34.15.0.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#state-control-section"
+    },
+    {
+      "key": "using-push-1#selection-control-section",
+      "title": "Selection Control Section",
+      "section": "34.15.0.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#selection-control-section"
+    },
+    {
+      "key": "using-push-1#displayencoder-section",
+      "title": "Display/Encoder Section",
+      "section": "34.15.0.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#displayencoder-section"
+    },
+    {
+      "key": "using-push-1#tempo-section",
+      "title": "Tempo Section",
+      "section": "34.15.0.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#tempo-section"
+    },
+    {
+      "key": "using-push-1#edit-section",
+      "title": "Edit Section",
+      "section": "34.15.0.8",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#edit-section"
+    },
+    {
+      "key": "using-push-1#transport-section",
+      "title": "Transport Section",
+      "section": "34.15.0.9",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#transport-section"
+    },
+    {
+      "key": "using-push-1#touch-strip",
+      "title": "Touch Strip",
+      "section": "34.15.0.10",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#touch-strip"
+    },
+    {
+      "key": "using-push-1#pad-section",
+      "title": "Pad Section",
+      "section": "34.15.0.11",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#pad-section"
+    },
+    {
+      "key": "using-push-1#scenegrid-section",
+      "title": "Scene/Grid Section",
+      "section": "34.15.0.12",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#scenegrid-section"
+    },
+    {
+      "key": "using-push-1#using-footswitches-with-push-1",
+      "title": "Using Footswitches with Push 1",
+      "section": "34.15.0.13",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-1/#using-footswitches-with-push-1"
+    },
+    {
+      "key": "using-push-2#setup",
+      "title": "Setup",
+      "section": "35.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#setup"
+    },
+    {
+      "key": "using-push-2#browsing-and-loading-sounds",
+      "title": "Browsing and Loading Sounds",
+      "section": "35.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#browsing-and-loading-sounds"
+    },
+    {
+      "key": "using-push-2#playing-and-programming-beats",
+      "title": "Playing and Programming Beats",
+      "section": "35.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#playing-and-programming-beats"
+    },
+    {
+      "key": "using-push-2#loop-selector",
+      "title": "Loop Selector",
+      "section": "35.3.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#loop-selector"
+    },
+    {
+      "key": "using-push-2#16-velocities-mode",
+      "title": "16 Velocities Mode",
+      "section": "35.3.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#16-velocities-mode"
+    },
+    {
+      "key": "using-push-2#64-pad-mode",
+      "title": "64-Pad Mode",
+      "section": "35.3.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#64-pad-mode"
+    },
+    {
+      "key": "using-push-2#loading-individual-drums",
+      "title": "Loading Individual Drums",
+      "section": "35.3.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#loading-individual-drums"
+    },
+    {
+      "key": "using-push-2#additional-pad-options-for-push-2",
+      "title": "Additional Pad Options for Push 2",
+      "section": "35.3.4.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#additional-pad-options-for-push-2"
+    },
+    {
+      "key": "using-push-2#step-sequencing-beats",
+      "title": "Step Sequencing Beats",
+      "section": "35.3.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#step-sequencing-beats"
+    },
+    {
+      "key": "using-push-2#real-time-recording",
+      "title": "Real-time Recording",
+      "section": "35.3.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#real-time-recording"
+    },
+    {
+      "key": "using-push-2#fixed-length-recording",
+      "title": "Fixed Length Recording",
+      "section": "35.3.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#fixed-length-recording"
+    },
+    {
+      "key": "using-push-2#additional-recording-options",
+      "title": "Additional Recording Options",
+      "section": "35.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#additional-recording-options"
+    },
+    {
+      "key": "using-push-2#recording-with-repeat",
+      "title": "Recording with Repeat",
+      "section": "35.4.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#recording-with-repeat"
+    },
+    {
+      "key": "using-push-2#quantizing",
+      "title": "Quantizing",
+      "section": "35.4.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#quantizing"
+    },
+    {
+      "key": "using-push-2#arrangement-recording",
+      "title": "Arrangement Recording",
+      "section": "35.4.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#arrangement-recording"
+    },
+    {
+      "key": "using-push-2#playing-melodies-and-harmonies",
+      "title": "Playing Melodies and Harmonies",
+      "section": "35.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#playing-melodies-and-harmonies"
+    },
+    {
+      "key": "using-push-2#playing-in-other-keys",
+      "title": "Playing in Other Keys",
+      "section": "35.5.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#playing-in-other-keys"
+    },
+    {
+      "key": "using-push-2#step-sequencing-melodies-and-harmonies",
+      "title": "Step Sequencing Melodies and Harmonies",
+      "section": "35.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#step-sequencing-melodies-and-harmonies"
+    },
+    {
+      "key": "using-push-2#adjusting-the-loop-length",
+      "title": "Adjusting the Loop Length",
+      "section": "35.6.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#adjusting-the-loop-length"
+    },
+    {
+      "key": "using-push-2#melodic-sequencer--32-notes",
+      "title": "Melodic Sequencer + 32 Notes",
+      "section": "35.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#melodic-sequencer--32-notes"
+    },
+    {
+      "key": "using-push-2#32-notes",
+      "title": "32 Notes",
+      "section": "35.7.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#32-notes"
+    },
+    {
+      "key": "using-push-2#sequencer",
+      "title": "Sequencer",
+      "section": "35.7.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#sequencer"
+    },
+    {
+      "key": "using-push-2#working-with-samples",
+      "title": "Working with Samples",
+      "section": "35.8",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#working-with-samples"
+    },
+    {
+      "key": "using-push-2#classic-playback-mode",
+      "title": "Classic Playback Mode",
+      "section": "35.8.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#classic-playback-mode"
+    },
+    {
+      "key": "using-push-2#one-shot-mode",
+      "title": "One-Shot Mode",
+      "section": "35.8.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#one-shot-mode"
+    },
+    {
+      "key": "using-push-2#legato-playback",
+      "title": "Legato Playback",
+      "section": "35.8.2.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#legato-playback"
+    },
+    {
+      "key": "using-push-2#slicing-mode",
+      "title": "Slicing Mode",
+      "section": "35.8.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#slicing-mode"
+    },
+    {
+      "key": "using-push-2#navigating-in-note-mode",
+      "title": "Navigating in Note Mode",
+      "section": "35.9",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#navigating-in-note-mode"
+    },
+    {
+      "key": "using-push-2#working-with-instruments-and-effects",
+      "title": "Working With Instruments and Effects",
+      "section": "35.10",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#working-with-instruments-and-effects"
+    },
+    {
+      "key": "using-push-2#adding-deleting-and-reordering-devices",
+      "title": "Adding, Deleting, and Reordering Devices",
+      "section": "35.10.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#adding-deleting-and-reordering-devices"
+    },
+    {
+      "key": "using-push-2#working-with-racks",
+      "title": "Working with Racks",
+      "section": "35.10.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#working-with-racks"
+    },
+    {
+      "key": "using-push-2#track-control-and-mixing",
+      "title": "Track Control And Mixing",
+      "section": "35.11",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#track-control-and-mixing"
+    },
+    {
+      "key": "using-push-2#rack-and-group-track-mixing",
+      "title": "Rack and Group Track Mixing",
+      "section": "35.11.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#rack-and-group-track-mixing"
+    },
+    {
+      "key": "using-push-2#recording-automation",
+      "title": "Recording Automation",
+      "section": "35.12",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#recording-automation"
+    },
+    {
+      "key": "using-push-2#step-sequencing-automation",
+      "title": "Step Sequencing Automation",
+      "section": "35.13",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#step-sequencing-automation"
+    },
+    {
+      "key": "using-push-2#clip-mode",
+      "title": "Clip Mode",
+      "section": "35.14",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#clip-mode"
+    },
+    {
+      "key": "using-push-2#using-midi-tracks-in-clip-mode",
+      "title": "Using MIDI Tracks in Clip Mode",
+      "section": "35.14.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#using-midi-tracks-in-clip-mode"
+    },
+    {
+      "key": "using-push-2#real-time-playing-layouts",
+      "title": "Real-Time Playing Layouts",
+      "section": "35.14.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#real-time-playing-layouts"
+    },
+    {
+      "key": "using-push-2#sequencing-layouts",
+      "title": "Sequencing Layouts",
+      "section": "35.14.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#sequencing-layouts"
+    },
+    {
+      "key": "using-push-2#melodic-sequencer",
+      "title": "Melodic Sequencer",
+      "section": "35.14.3.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#melodic-sequencer"
+    },
+    {
+      "key": "using-push-2#melodic-sequencer--32-notes-1",
+      "title": "Melodic Sequencer + 32 Notes",
+      "section": "35.14.3.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#melodic-sequencer--32-notes-1"
+    },
+    {
+      "key": "using-push-2#note-specific-parameters",
+      "title": "Note-Specific Parameters",
+      "section": "35.14.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#note-specific-parameters"
+    },
+    {
+      "key": "using-push-2#controlling-lives-session-view",
+      "title": "Controlling Live’s Session View",
+      "section": "35.15",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#controlling-lives-session-view"
+    },
+    {
+      "key": "using-push-2#session-overview",
+      "title": "Session Overview",
+      "section": "35.15.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#session-overview"
+    },
+    {
+      "key": "using-push-2#setup-menu",
+      "title": "Setup Menu",
+      "section": "35.16",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#setup-menu"
+    },
+    {
+      "key": "using-push-2#push-2-control-reference",
+      "title": "Push 2 Control Reference",
+      "section": "35.17",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#push-2-control-reference"
+    },
+    {
+      "key": "using-push-2#using-footswitches-with-push-2",
+      "title": "Using Footswitches with Push 2",
+      "section": "35.17.0.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/using-push-2/#using-footswitches-with-push-2"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#synchronizing-via-link",
+      "title": "Synchronizing via Link",
+      "section": "36.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#synchronizing-via-link"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#setting-up-link-and-link-audio",
+      "title": "Setting up Link and Link Audio",
+      "section": "36.1.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#setting-up-link-and-link-audio"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#using-link",
+      "title": "Using Link",
+      "section": "36.1.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#using-link"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#using-link-audio",
+      "title": "Using Link Audio",
+      "section": "36.1.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#using-link-audio"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#synchronizing-via-tempo-follower",
+      "title": "Synchronizing via Tempo Follower",
+      "section": "36.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#synchronizing-via-tempo-follower"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#setting-up-tempo-follower",
+      "title": "Setting Up Tempo Follower",
+      "section": "36.2.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#setting-up-tempo-follower"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#synchronizing-via-midi",
+      "title": "Synchronizing via MIDI",
+      "section": "36.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#synchronizing-via-midi"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#synchronizing-external-midi-devices-to-live",
+      "title": "Synchronizing External MIDI Devices to Live",
+      "section": "36.3.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#synchronizing-external-midi-devices-to-live"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#synchronizing-live-to-external-midi-devices",
+      "title": "Synchronizing Live to External MIDI Devices",
+      "section": "36.3.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#synchronizing-live-to-external-midi-devices"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#midi-timecode-options",
+      "title": "MIDI Timecode Options",
+      "section": "36.3.2.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#midi-timecode-options"
+    },
+    {
+      "key": "synchronizing-with-link-tempo-follower-and-midi#sync-delay",
+      "title": "Sync Delay",
+      "section": "36.3.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/synchronizing-with-link-tempo-follower-and-midi/#sync-delay"
+    },
+    {
+      "key": "computer-audio-resources-and-strategies#managing-the-cpu-load",
+      "title": "Managing the CPU Load",
+      "section": "37.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/computer-audio-resources-and-strategies/#managing-the-cpu-load"
+    },
+    {
+      "key": "computer-audio-resources-and-strategies#the-cpu-load-meter",
+      "title": "The CPU Load Meter",
+      "section": "37.1.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/computer-audio-resources-and-strategies/#the-cpu-load-meter"
+    },
+    {
+      "key": "computer-audio-resources-and-strategies#cpu-load-from-multichannel-audio",
+      "title": "CPU Load from Multichannel Audio",
+      "section": "37.1.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/computer-audio-resources-and-strategies/#cpu-load-from-multichannel-audio"
+    },
+    {
+      "key": "computer-audio-resources-and-strategies#cpu-load-from-tracks-and-devices",
+      "title": "CPU Load from Tracks and Devices",
+      "section": "37.1.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/computer-audio-resources-and-strategies/#cpu-load-from-tracks-and-devices"
+    },
+    {
+      "key": "computer-audio-resources-and-strategies#track-freeze",
+      "title": "Track Freeze",
+      "section": "37.1.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/computer-audio-resources-and-strategies/#track-freeze"
+    },
+    {
+      "key": "computer-audio-resources-and-strategies#managing-the-disk-load",
+      "title": "Managing the Disk Load",
+      "section": "37.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/computer-audio-resources-and-strategies/#managing-the-disk-load"
+    },
+    {
+      "key": "audio-fact-sheet#testing-and-methodology",
+      "title": "Testing and Methodology",
+      "section": "38.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#testing-and-methodology"
+    },
+    {
+      "key": "audio-fact-sheet#neutral-operations",
+      "title": "Neutral Operations",
+      "section": "38.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#neutral-operations"
+    },
+    {
+      "key": "audio-fact-sheet#undithered-rendering",
+      "title": "Undithered Rendering",
+      "section": "38.2.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#undithered-rendering"
+    },
+    {
+      "key": "audio-fact-sheet#matching-sample-rateno-transposition",
+      "title": "Matching Sample Rate/No Transposition",
+      "section": "38.2.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#matching-sample-rateno-transposition"
+    },
+    {
+      "key": "audio-fact-sheet#unstretched-beatstonestexturere-pitch-warping",
+      "title": "Unstretched Beats/Tones/Texture/Re-Pitch Warping",
+      "section": "38.2.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#unstretched-beatstonestexturere-pitch-warping"
+    },
+    {
+      "key": "audio-fact-sheet#summing-at-single-mix-points",
+      "title": "Summing at Single Mix Points",
+      "section": "38.2.4",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#summing-at-single-mix-points"
+    },
+    {
+      "key": "audio-fact-sheet#recording-external-signals-bit-depth--ad-converter",
+      "title": "Recording External Signals (Bit Depth >/= A/D Converter)",
+      "section": "38.2.5",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#recording-external-signals-bit-depth--ad-converter"
+    },
+    {
+      "key": "audio-fact-sheet#recording-internal-sources-at-32-bit",
+      "title": "Recording Internal Sources at 32 Bit",
+      "section": "38.2.6",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#recording-internal-sources-at-32-bit"
+    },
+    {
+      "key": "audio-fact-sheet#freezing-tracks",
+      "title": "Freezing Tracks",
+      "section": "38.2.7",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#freezing-tracks"
+    },
+    {
+      "key": "audio-fact-sheet#bypassed-effects",
+      "title": "Bypassed Effects",
+      "section": "38.2.8",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#bypassed-effects"
+    },
+    {
+      "key": "audio-fact-sheet#routing",
+      "title": "Routing",
+      "section": "38.2.9",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#routing"
+    },
+    {
+      "key": "audio-fact-sheet#splitting-clips",
+      "title": "Splitting Clips",
+      "section": "38.2.10",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#splitting-clips"
+    },
+    {
+      "key": "audio-fact-sheet#non-neutral-operations",
+      "title": "Non-Neutral Operations",
+      "section": "38.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#non-neutral-operations"
+    },
+    {
+      "key": "audio-fact-sheet#playback-in-complex-and-complex-pro-mode",
+      "title": "Playback in Complex and Complex Pro Mode",
+      "section": "38.3.1",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#playback-in-complex-and-complex-pro-mode"
+    },
+    {
+      "key": "audio-fact-sheet#sample-rate-conversiontransposition",
+      "title": "Sample Rate Conversion/Transposition",
+      "section": "38.3.2",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#sample-rate-conversiontransposition"
+    },
+    {
+      "key": "audio-fact-sheet#volume-automation",
+      "title": "Volume Automation",
+      "section": "38.3.3",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#volume-automation"
+    },
+    {
+      "key": "audio-fact-sheet#dithering",
+      "title": "Dithering",
+      "section": "38.3.4",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#dithering"
+    },
+    {
+      "key": "audio-fact-sheet#recording-external-signals-bit-depth--ad-converter-1",
+      "title": "Recording External Signals (Bit Depth < A/D Converter)",
+      "section": "38.3.5",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#recording-external-signals-bit-depth--ad-converter-1"
+    },
+    {
+      "key": "audio-fact-sheet#recording-internal-sources-below-32-bit",
+      "title": "Recording Internal Sources Below 32 Bit",
+      "section": "38.3.6",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#recording-internal-sources-below-32-bit"
+    },
+    {
+      "key": "audio-fact-sheet#consolidate",
+      "title": "Consolidate",
+      "section": "38.3.7",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#consolidate"
+    },
+    {
+      "key": "audio-fact-sheet#clip-fades",
+      "title": "Clip Fades",
+      "section": "38.3.8",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#clip-fades"
+    },
+    {
+      "key": "audio-fact-sheet#panning",
+      "title": "Panning",
+      "section": "38.3.9",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#panning"
+    },
+    {
+      "key": "audio-fact-sheet#grooves",
+      "title": "Grooves",
+      "section": "38.3.10",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#grooves"
+    },
+    {
+      "key": "audio-fact-sheet#tips-for-achieving-optimal-sound-quality-in-live",
+      "title": "Tips for Achieving Optimal Sound Quality in Live",
+      "section": "38.4",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#tips-for-achieving-optimal-sound-quality-in-live"
+    },
+    {
+      "key": "audio-fact-sheet#conclusion",
+      "title": "Conclusion",
+      "section": "38.5",
+      "view": "sets",
+      "url": "https://www.ableton.com/en/live-manual/12/audio-fact-sheet/#conclusion"
+    },
+    {
+      "key": "midi-fact-sheet#ideal-midi-behavior",
+      "title": "Ideal MIDI Behavior",
+      "section": "39.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-fact-sheet/#ideal-midi-behavior"
+    },
+    {
+      "key": "midi-fact-sheet#midi-timing-problems",
+      "title": "MIDI Timing Problems",
+      "section": "39.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-fact-sheet/#midi-timing-problems"
+    },
+    {
+      "key": "midi-fact-sheet#lives-midi-solutions",
+      "title": "Live’s MIDI Solutions",
+      "section": "39.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-fact-sheet/#lives-midi-solutions"
+    },
+    {
+      "key": "midi-fact-sheet#variables-outside-of-lives-control",
+      "title": "Variables Outside of Live’s Control",
+      "section": "39.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-fact-sheet/#variables-outside-of-lives-control"
+    },
+    {
+      "key": "midi-fact-sheet#tips-for-achieving-optimal-midi-performance",
+      "title": "Tips for Achieving Optimal MIDI Performance",
+      "section": "39.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-fact-sheet/#tips-for-achieving-optimal-midi-performance"
+    },
+    {
+      "key": "midi-fact-sheet#summary-and-conclusions",
+      "title": "Summary and Conclusions",
+      "section": "39.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/midi-fact-sheet/#summary-and-conclusions"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#menu-and-keyboard-navigation-settings",
+      "title": "Menu and Keyboard Navigation Settings",
+      "section": "40.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#menu-and-keyboard-navigation-settings"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#using-tab-for-navigation",
+      "title": "Using Tab for Navigation",
+      "section": "40.1.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#using-tab-for-navigation"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#settings-menu",
+      "title": "Settings Menu",
+      "section": "40.1.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#settings-menu"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#options-menu",
+      "title": "Options Menu",
+      "section": "40.1.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#options-menu"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#speak-help-text",
+      "title": "Speak Help Text",
+      "section": "40.1.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#speak-help-text"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#audio-setup",
+      "title": "Audio Setup",
+      "section": "40.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#audio-setup"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#connecting-midi-devices",
+      "title": "Connecting MIDI Devices",
+      "section": "40.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#connecting-midi-devices"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#navigating-in-live",
+      "title": "Navigating in Live",
+      "section": "40.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#navigating-in-live"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#navigate-menu",
+      "title": "Navigate Menu",
+      "section": "40.4.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#navigate-menu"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#control-bar---alt-0-win--option-0-mac",
+      "title": "Control Bar - Alt 0 (Win) / Option 0 (Mac)",
+      "section": "40.4.1.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#control-bar---alt-0-win--option-0-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#session-view---alt-1-win--option-1-mac",
+      "title": "Session View - Alt 1 (Win) / Option 1 (Mac)",
+      "section": "40.4.1.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#session-view---alt-1-win--option-1-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#arrangement-view---alt-2-win--option-2-mac",
+      "title": "Arrangement View - Alt 2 (Win) / Option 2 (Mac)",
+      "section": "40.4.1.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#arrangement-view---alt-2-win--option-2-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#clip-view---alt-3-win--option-3-mac",
+      "title": "Clip View - Alt 3 (Win) / Option 3 (Mac)",
+      "section": "40.4.1.4",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#clip-view---alt-3-win--option-3-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#device-view---alt-4-win--option-4-mac",
+      "title": "Device View - Alt 4 (Win) / Option 4 (Mac)",
+      "section": "40.4.1.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#device-view---alt-4-win--option-4-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#browser---alt-5-win--option-5-mac",
+      "title": "Browser - Alt 5 (Win) / Option 5 (Mac)",
+      "section": "40.4.1.6",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#browser---alt-5-win--option-5-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#groove-pool---alt-6-win--option-6-mac",
+      "title": "Groove Pool - Alt 6 (Win) / Option 6 (Mac)",
+      "section": "40.4.1.7",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#groove-pool---alt-6-win--option-6-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#learn-view---alt-7-win--option-7-mac",
+      "title": "Learn View - Alt 7 (Win) / Option 7 (Mac)",
+      "section": "40.4.1.8",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#learn-view---alt-7-win--option-7-mac"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#editing-automation-and-modulation-envelopes",
+      "title": "Editing Automation and Modulation Envelopes",
+      "section": "40.5",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#editing-automation-and-modulation-envelopes"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#navigating-between-breakpoints",
+      "title": "Navigating Between Breakpoints",
+      "section": "40.5.1",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#navigating-between-breakpoints"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#selecting-and-editing-breakpoints",
+      "title": "Selecting and Editing Breakpoints",
+      "section": "40.5.2",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#selecting-and-editing-breakpoints"
+    },
+    {
+      "key": "accessibility-and-keyboard-navigation#switching-between-automation-envelopes-in-arrangement-view",
+      "title": "Switching Between Automation Envelopes in Arrangement View",
+      "section": "40.5.3",
+      "view": "workspace",
+      "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/#switching-between-automation-envelopes-in-arrangement-view"
+    }
+  ],
+  "pendingDevicePanels": [
+    {
+      "id": "ref-live-instrument-reference--drum-sampler",
+      "title": "Drum Sampler",
+      "family": "Instruments"
+    },
+    {
+      "id": "ref-live-instrument-reference--external-instrument",
+      "title": "External Instrument",
+      "family": "Instruments"
+    },
+    {
+      "id": "ref-live-instrument-reference--impulse",
+      "title": "Impulse",
+      "family": "Instruments"
+    },
+    {
+      "id": "ref-live-instrument-reference--meld",
+      "title": "Meld",
+      "family": "Instruments"
+    },
+    {
+      "id": "ref-live-instrument-reference--tension",
+      "title": "Tension",
+      "family": "Instruments"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--amp",
+      "title": "Amp",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--auto-pan-tremolo",
+      "title": "Auto Pan-Tremolo",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--auto-shift",
+      "title": "Auto Shift",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--beat-repeat",
+      "title": "Beat Repeat",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--cabinet",
+      "title": "Cabinet",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--channel-eq",
+      "title": "Channel EQ",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--corpus",
+      "title": "Corpus",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--drum-buss",
+      "title": "Drum Buss",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--dynamic-tube",
+      "title": "Dynamic Tube",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--eq-three",
+      "title": "EQ Three",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--erosion",
+      "title": "Erosion",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--external-audio-effect",
+      "title": "External Audio Effect",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--filter-delay",
+      "title": "Filter Delay",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--gate",
+      "title": "Gate",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--glue-compressor",
+      "title": "Glue Compressor",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--grain-delay",
+      "title": "Grain Delay",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--hybrid-reverb",
+      "title": "Hybrid Reverb",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--limiter",
+      "title": "Limiter",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--looper",
+      "title": "Looper",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--multiband-dynamics",
+      "title": "Multiband Dynamics",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--overdrive",
+      "title": "Overdrive",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--pedal",
+      "title": "Pedal",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--phaser-flanger",
+      "title": "Phaser-Flanger",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--redux",
+      "title": "Redux",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--resonators",
+      "title": "Resonators",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--roar",
+      "title": "Roar",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--shifter",
+      "title": "Shifter",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--spectral-resonator",
+      "title": "Spectral Resonator",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--spectral-time",
+      "title": "Spectral Time",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--spectrum",
+      "title": "Spectrum",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--tuner",
+      "title": "Tuner",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--vinyl-distortion",
+      "title": "Vinyl Distortion",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-audio-effect-reference--vocoder",
+      "title": "Vocoder",
+      "family": "Audio Effects"
+    },
+    {
+      "id": "ref-live-midi-effect-reference--cc-control",
+      "title": "CC Control",
+      "family": "MIDI Effects"
+    },
+    {
+      "id": "ref-live-midi-effect-reference--random",
+      "title": "Random",
+      "family": "MIDI Effects"
+    },
+    {
+      "id": "ref-live-midi-effect-reference--scale",
+      "title": "Scale",
+      "family": "MIDI Effects"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-clang",
+      "title": "DS Clang",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-clap",
+      "title": "DS Clap",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-cymbal",
+      "title": "DS Cymbal",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-fm",
+      "title": "DS FM",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-hh",
+      "title": "DS HH",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-kick",
+      "title": "DS Kick",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-snare",
+      "title": "DS Snare",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--ds-tom",
+      "title": "DS Tom",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--align-delay",
+      "title": "Align Delay",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--envelope-follower",
+      "title": "Envelope Follower",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--lfo",
+      "title": "LFO",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--shaper",
+      "title": "Shaper",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--envelope-midi",
+      "title": "Envelope MIDI",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--expression-control",
+      "title": "Expression Control",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--midi-monitor",
+      "title": "MIDI Monitor",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--mpe-control",
+      "title": "MPE Control",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--note-echo",
+      "title": "Note Echo",
+      "family": "Max for Live"
+    },
+    {
+      "id": "ref-max-for-live-devices--shaper-midi",
+      "title": "Shaper MIDI",
+      "family": "Max for Live"
+    }
+  ]
+}

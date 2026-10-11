@@ -1,0 +1,7 @@
+# Scratch: downloaded manual PDFs and run logs
+tmp/
+
+.DS_Store
+
+# Files over 20 MB are kept out of history and listed here by path.
+# None existed when this repo was created (11 Oct 2026).

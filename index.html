@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0b0a">
+  <meta name="color-scheme" content="dark">
+  <title>Ableton Live, Mapped — An Explorable Atlas</title>
+  <meta name="description" content="An explorable atlas of Ableton Live: Workspace, Clips, Devices, and History.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23C8A44D'/%3E%3Cpath d='M7 8h7v7H7zm11 0h7v7h-7zM7 19h18v5H7z' fill='%230E0B0A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="atlas.css">
+  <script src="record-midi.js" defer></script>
+  <script src="entry-reference.js" defer></script>
+  <script src="manual-data.js" defer></script>
+  <script src="manual-guides.js" defer></script>
+  <script src="manual-device-guides.js" defer></script>
+  <script src="manual-workflow-guides.js" defer></script>
+  <script src="manual-editing-guides.js" defer></script>
+  <script src="manual-clip-guides.js" defer></script>
+  <script src="manual-workspace-guides.js" defer></script>
+  <script src="manual-set-guides.js" defer></script>
+  <script src="manual-routing-guides.js" defer></script>
+  <script src="manual-envelope-guides.js" defer></script>
+  <script src="manual-file-guides.js" defer></script>
+  <script src="manual-atlas.js" defer></script>
+  <script src="workspace-media.js" defer></script>
+  <script src="manual-completion.js" defer></script>
+  <script src="push-atlas.js" defer></script>
+  <script src="workspace-atlas.js" defer></script>
+  <script src="shortcut-explorer.js" defer></script>
+  <script src="clips-atlas.js" defer></script>
+  <script src="device-actions.js" defer></script>
+  <script src="device-effects.js" defer></script>
+  <script src="device-racks-max.js" defer></script>
+  <script src="devices-atlas.js" defer></script>
+  <script src="manual-images-data.js" defer></script>
+  <script src="manual-images.js" defer></script>
+  <script src="device-control-details.js" defer></script>
+  <script src="sampler-control-details.js" defer></script>
+  <script src="device-review-instruments.js" defer></script>
+  <script src="device-review-effects.js" defer></script>
+  <script src="device-review-midi.js" defer></script>
+  <script src="device-review-racks.js" defer></script>
+  <script src="history-data.js" defer></script>
+  <script src="history-images-data.js" defer></script>
+  <script src="history-images.js" defer></script>
+  <script src="history-atlas.js" defer></script>
+  <script src="neighborhood-cards.js" defer></script>
+  <script src="card-navigation.js" defer></script>
+  <script src="vocabulary.js" defer></script>
+  <script src="atlas.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to atlas</a>
+<header class="atlas-header">
+  <button class="brand" data-view="overview" aria-label="Atlas overview">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-txt">Explorable Atlas<b>Ableton Live, Mapped</b></span>
+  </button>
+  <nav class="nav" aria-label="Territories">
+    <button class="nav-btn active" data-view="overview" aria-current="page">Overview</button>
+    <button class="nav-btn" data-view="workspace">I · Workspace</button>
+    <button class="nav-btn" data-view="clips">II · Clips</button>
+    <button class="nav-btn" data-view="devices">III · Devices</button>
+    <button class="nav-btn" data-view="history">IV · History</button>
+  </nav>
+  <button class="atlas-find-button" id="atlasFindOpen">Find</button>
+  <button class="session-toggle" id="sessionToggle" data-session="start">Start session</button>
+  <button class="flag-count" data-view="flags" aria-label="View flags"><span class="fc-flag" aria-hidden="true">⚑</span><span class="fc-num" id="fcNum">0</span> flags</button>
+</header>
+<main id="main" tabindex="-1">
+  <section class="view active" id="view-overview" aria-labelledby="overview-title">
+    <div class="hero"><span class="eyebrow">An explorable atlas</span><h1 class="hero-title" id="overview-title">Ableton Live,<br><em>mapped.</em></h1></div>
+    <div class="territory-grid" id="territoryGrid"></div>
+  </section>
+
+  <section class="view" id="view-workspace" aria-labelledby="workspace-title" hidden>
+    <div class="section-head"><div><span class="eyebrow">Territory I</span><h2 class="section-title" id="workspace-title">The Workspace</h2></div><label class="platform-label">Keys <select id="platform"><option value="mac">Mac</option><option value="win">Windows</option></select></label></div>
+    <div class="split has-side">
+      <div class="territory-content">
+        <div id="workspaceIndex"></div>
+      </div>
+      <aside class="inspector" id="insp-workspace" aria-label="Workspace detail"></aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-clips" aria-labelledby="clips-title" hidden>
+    <div class="section-head"><div><span class="eyebrow">Territory II</span><h2 class="section-title" id="clips-title">Clips</h2></div><label class="platform-label">Keys <select data-reference-platform aria-label="Clip shortcut platform"><option value="mac">Mac</option><option value="win">Windows</option></select></label></div>
+    <div class="split has-side"><div class="territory-content" id="clipsIndex"></div><aside class="inspector" id="insp-clips" aria-label="Clip detail"></aside></div>
+  </section>
+
+  <section class="view" id="view-devices" aria-labelledby="devices-title" hidden>
+    <div class="section-head"><div><span class="eyebrow">Territory III</span><h2 class="section-title" id="devices-title">Devices</h2></div><label class="platform-label">Keys <select data-reference-platform aria-label="Device shortcut platform"><option value="mac">Mac</option><option value="win">Windows</option></select></label></div>
+    <div class="split has-side"><div class="territory-content"><div id="deviceGroups"></div><p class="context-note">Live 12 · Availability varies by edition and release.</p></div><aside class="inspector" id="insp-devices" aria-label="Device detail"></aside></div>
+  </section>
+
+  <section class="view" id="view-history" aria-labelledby="history-title" hidden>
+    <div class="section-head"><div><span class="eyebrow">Territory IV</span><h2 class="section-title" id="history-title">History</h2></div></div>
+    <div class="split has-side"><div id="historyIndex"></div><aside class="inspector" id="insp-history" aria-label="History detail"></aside></div>
+  </section>
+
+  <section class="view" id="view-flags" aria-labelledby="flags-title" hidden><div class="section-head"><span class="eyebrow">Your path</span><h2 class="section-title" id="flags-title">Flags &amp; Trace</h2></div><div id="flagsBody"></div><p class="context-note" id="storageNote">Saved in this browser.</p></section>
+</main>
+<footer><span>Live 12 · Working draft</span><details><summary>Sources &amp; scope</summary><p>Adapted from <a href="https://templeoflum.github.io/piano-atlas/" target="_blank" rel="noreferrer">The Piano, Mapped</a>, with original Ableton explanations. Manual illustrations: © Ableton AG. Independent atlas; not an Ableton publication.</p><div class="detail-links"><button data-entry="ref-welcome-to-live--welcome-to-live">About Live ↗</button><button data-entry="ref-credits--credits">Manual credits ↗</button></div><p>All indexed manual topics have local homes. Detailed content review is ongoing; a mapped topic is not a completeness guarantee. No lesson Sets or shared notes are included. The trace and flags stay in this browser. Check image-use permission before public distribution.</p><p><a href="https://www.ableton.com/en/live-manual/12/welcome-to-live/" target="_blank" rel="noreferrer">Ableton Live manual</a> · <a href="https://www.roberthenke.com/interviews/ableton.html" target="_blank" rel="noreferrer">Behles &amp; Henke</a> · <a href="https://roberthenke.com/technology/operator.html" target="_blank" rel="noreferrer">Operator</a></p></details></footer>
+<dialog id="atlasFind" class="atlas-find-dialog" aria-labelledby="atlasFindTitle">
+  <div class="find-heading"><h2 id="atlasFindTitle">Find</h2><button id="atlasFindClose" aria-label="Close search">Close ×</button></div>
+  <label class="sr-only" for="atlasFindQuery">Find a topic, device or shortcut</label>
+  <input id="atlasFindQuery" type="search" placeholder="Topic, device or shortcut…" autocomplete="off">
+  <p id="atlasFindCount" class="context-note" aria-live="polite"></p>
+  <div id="atlasFindResults"></div>
+</dialog>
+<div id="announcement" class="sr-only" aria-live="polite"></div>
+<dialog id="captureDialog" class="capture-dialog" aria-labelledby="captureTitle">
+  <div class="capture-toolbar" id="captureToolbar"><h2 id="captureTitle"></h2><div><button id="captureRetry" type="button" hidden>Retry</button><button id="captureContext" type="button" aria-pressed="false">Full window</button><button id="captureScale" type="button" aria-pressed="false">Actual size</button><button id="captureClose" type="button" aria-label="Close image">Close ×</button></div></div>
+  <div class="capture-scroll" id="captureScroll"><div id="captureMedia"></div></div>
+  <p id="captureCaption"></p>
+</dialog>
+</body>
+</html>
