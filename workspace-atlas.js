@@ -17,8 +17,18 @@ const workspaceAtlas=(()=>{
         note:'Tab switches views when Use Tab to Move Focus is off.',
         details:[ref(K+'using-tab-for-navigation','Tab behavior')]
       }),
-      core('clip-view','Clip View',{images:['midiSample'],keys:[['Clip / Device','⇧ Tab','Shift Tab']],links:['midi-clip','audio-source']}),
-      core('device-view','Device View',{images:['chain'],keys:[['Clip / Device','⇧ Tab','Shift Tab']],links:['chain']}),
+      core('clip-view','Clip View',{images:['midiSample'],keys:[['Clip / Device','⇧ Tab','Shift Tab']],links:['midi-clip','audio-source','ws-clips-devices']}),
+      core('device-view','Device View',{images:['chain'],keys:[['Clip / Device','⇧ Tab','Shift Tab']],links:['chain'],details:[
+        action('clips-devices','Clips / devices','live-concepts#clip-and-device-view','A track holds clips and a chain of devices. The clips hold the material; the devices process its signal.',[
+          'Double-click a clip to open Clip View, the clip’s editor. Press Shift + Tab to show the same track’s Device View in its place.',
+          'Press Shift + Tab again to return to the clip. To see both at once, use the triangle toggles beside the Clip View and Device View selectors at bottom right.'
+        ],{keys:[['Clip / Device','⇧ Tab','Shift Tab'],['Show Clip View','⌘ ⌥ 3','Ctrl Alt 3'],['Show Device View','⌘ ⌥ 4','Ctrl Alt 4']],terms:[
+          ['Clip','Lives in a Session slot or on the Arrangement timeline. Clip View shows the selected clip’s properties: start and end, looping, scale; warping for audio; pitch and time utilities and MIDI Tools for MIDI.'],
+          ['Device','Lives in the track’s device chain. Device View shows the devices on the selected track.'],
+          ['MIDI track','Can hold MIDI effects, instruments and audio effects.'],
+          ['Audio, group and return tracks','Hold audio effects only.']
+        ],links:['clip-view','chain']})
+      ]}),
       action('make-room','Make room','clip-view#clip-view-layout','Grab an edge to give an editor more space.',[
         'Open a clip. Drag the divider above Clip View upward; drag it down to shrink the editor.',
         'Drag the Browser’s right edge sideways to change its width.'
@@ -192,7 +202,7 @@ const workspaceAtlas=(()=>{
       ref(S+'tempo--midi','MIDI ports',{
         details:[ref('routing-and-i-o#track','Track'),ref('routing-and-i-o#remote','Remote'),ref('routing-and-i-o#sync','Sync'),ref(S+'link','Link')]
       }),
-      ref('routing-and-i-o#playing-midi-with-the-computer-keyboard','Typing keyboard',{keys:[['Computer MIDI Keyboard','M','M']]})
+      ref('routing-and-i-o#playing-midi-with-the-computer-keyboard','Typing keyboard',{keys:[['Computer MIDI Keyboard','M','M']],links:['ca-record-arrangement']})
     ]}
   ];
   const neighborhoods=[

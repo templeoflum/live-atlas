@@ -44,5 +44,13 @@ assert.ok(c.locations.get('ca-length').item.parts.some(p=>p.key==='editing-midi#
 assert.ok(c.locations.get('ca-tuning').item.parts[0].guide.terms.some(([t,s])=>s.includes('save a copy')),'Retuning warning retained');
 assert.ok(c.locations.get('ca-tools').item.parts[0].guide.steps.some(s=>s.includes('Reset')),'Apply/undo/reset distinction');
 assert.equal(c.locations.get('ca-arm').item.video,false,'Image pass retires the custom demonstration from the active card');
+// Lesson 1 gap: typing keyboard to Arrangement Record to a finished MIDI take, on one card beside Record MIDI.
+const arr=c.locations.get('ca-record-arrangement'),recording=arr.area.items.map(i=>i.id);
+assert.equal(arr.area.label,'Recording');assert.equal(recording.indexOf('ca-record-arrangement'),recording.indexOf('record-midi')+1,'Directly after Record MIDI');
+assert.equal(arr.item.url,m.nodes.get('recording-new-clips#recording-into-the-arrangement').url,'Cites Recording Into the Arrangement');
+assert.deepEqual(json(arr.item.parts.map(p=>p.url)),['routing-and-i-o#playing-midi-with-the-computer-keyboard','recording-new-clips#recording-into-the-arrangement'].map(k=>m.nodes.get(k).url),'Each part cites its manual section');
+assert.ok(arr.item.parts.every(p=>!p.key),'Cites without taking a source home from Typing keyboard or Record passes');
+for(const id of ['record-midi','ca-takes'])assert.ok(c.locations.get(id).item.links.includes('ca-record-arrangement'),id+' links to it');
+assert.ok(['M','F9'].every(k=>arr.item.keys.some(row=>row[1]===k)),'Keyboard and Arrangement Record keys');
 assert.ok(html.includes('aria-label="Clip shortcut platform"'));
 console.log('Passed: all Clips source homes, action navigation, visible content, citations, both key platforms, image references, legacy links and flags.');

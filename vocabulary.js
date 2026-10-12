@@ -2,6 +2,7 @@
 // Tapping one shows a one-line meaning, its shortcut from the manual's table, and its card.
 const vocabulary=(()=>{
   // match: regex source (case-insensitive unless exact:true). keys: manual shortcut action names.
+  // source: the manual section a meaning is drawn from, where its home card covers more than that term.
   const terms=[
     {term:'Session View',match:'Session View',home:'session',keys:['Toggle Session/Arrangement View'],def:'The grid for launching clips in any order: tracks are columns, scenes are rows.'},
     {term:'Arrangement View',match:'Arrangement View',home:'arrangement',keys:['Toggle Session/Arrangement View'],def:'The timeline, where clips play in order from left to right.'},
@@ -35,6 +36,7 @@ const vocabulary=(()=>{
     {term:'Device',match:'devices?',home:'chain',def:'An instrument or effect on a track.'},
     {term:'Device Chain',match:'device chains?',home:'chain',def:'The row of devices on a track. Sound flows left to right.'},
     {term:'Instrument',match:'instruments?',home:'instrument',def:'A device that turns MIDI notes into sound.'},
+    {term:'Oscillator',match:'oscillators?',home:'da-operator--wave',source:'live-instrument-reference#more-oscillator-parameters',def:'A sound source that makes a waveform, like sine or saw, usually at the pitch you play.'},
     {term:'MIDI Effect',match:'MIDI effects?',home:'midi-effects',def:'A device that changes notes before they reach the instrument.'},
     {term:'Audio Effect',match:'audio effects?',home:'audio-effects',def:'A device that changes the sound passing through it.'},
     {term:'Plug-in',match:'plug-ins?|VST[23]?',home:'ref-first-steps--plug-ins',def:'An instrument or effect from another maker, in VST or AU format.'},

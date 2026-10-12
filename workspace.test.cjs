@@ -96,6 +96,13 @@ assert.ok(w.locations.get('ws-reset-value').item.data.note.includes('selected de
 assert.ok(w.locations.get('ws-tap-tempo').item.data.note.includes('start playback'));
 assert.equal(w.locations.get('ws-remove-map').item.data.keys[0][2],'Backspace');
 assert.ok(!w.locations.get('ws-disk').item.data.note.includes('screenshot'),'Retired screenshot description removed');
+// Lesson 1 gap: one card sets clips beside devices, inside Views next to Clip View and Device View.
+const clipsDevices=w.locations.get('ws-clips-devices');
+assert.equal(clipsDevices.area.id,'views');assert.equal(clipsDevices.action.id,'device-view','Shown inline under Device View');
+assert.ok(w.locations.get('clip-view').item.data.links.includes('ws-clips-devices'),'Clip View links to it');
+assert.equal(clipsDevices.item.url,manualAtlas.nodes.get('live-concepts#clip-and-device-view').url,'Cites Live Concepts › Clip and Device View');
+assert.ok(clipsDevices.item.data.keys.some(k=>k[2]==='Shift Tab'),'Shift + Tab is on the card');
+assert.ok(w.locations.get(sourceId('routing-and-i-o#playing-midi-with-the-computer-keyboard')).item.data.links.includes('ca-record-arrangement'),'Typing keyboard links to the Arrangement recording card');
 assert.ok(html.indexOf('workspace-atlas.js')>html.indexOf('manual-atlas.js'));
 assert.ok(html.indexOf('workspace-atlas.js')<html.indexOf('src="atlas.js"'));
 console.log('Passed: eight fixed Workspace families, bounded places/actions, contextual manual sections, search, references, both key platforms, unchanged Clips and Devices.');

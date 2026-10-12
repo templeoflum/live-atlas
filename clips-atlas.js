@@ -25,7 +25,20 @@ const clipsAtlas=(()=>{
         parts:[custom('Arm','Click the track’s Arm button. Red means ready; recording has not started.', ['Choose the input and use Monitor Auto. On a MIDI track, load an instrument.','Click Arm. Empty Session slots gain record circles.'],[['Arm','Selects a recording destination.'],['Clip Record','Starts a take in an empty slot.'],['More than one track','Hold Cmd on Mac or Ctrl on Windows while arming.']])],covered:sources(R,'arming-record-enabling-tracks')}),
       action('record-midi','Record MIDI',R,'recording-into-session-slots',{images:['pilotSlotsOn','midiSample'],aliases:sources(R,'recording-new-clips'),parts:[
         custom('Record MIDI','Play notes into a new Session clip.', ['Load an instrument on a MIDI track. Choose the keyboard under MIDI From, set Monitor to Auto, and arm the track.','In Session View, click the circle in an empty slot. Play after any count-in.','Click the clip’s launch button to finish the take and loop it. Press Space to stop. Double-click the body to edit the notes.'],[['No keyboard','Press M outside a text field to enable the Computer MIDI Keyboard. The A–L row plays notes.'],['No sound','Check the input, instrument, monitoring and audio output.'],['Only squares in empty slots','The track is not armed.']])
-      ],covered:sources(R,'recording-into-session-slots'),keys:[['Session / Arrangement','Tab','Tab'],['Stop','Space','Space']],links:['ca-arm','edit-notes']}),
+      ],covered:sources(R,'recording-into-session-slots'),keys:[['Session / Arrangement','Tab','Tab'],['Stop','Space','Space']],links:['ca-arm','edit-notes','ca-record-arrangement']}),
+      // Cites its sources without taking their homes: Typing keyboard (Workspace) and Record passes keep them.
+      {id:'ca-record-arrangement',label:'Record in Arrangement',cite:R+'#recording-into-the-arrangement',images:['arrangement'],keys:[['Computer MIDI Keyboard','M','M'],['Session / Arrangement','Tab','Tab'],['Arrangement Record','F9','F9'],['Play / stop','Space','Space']],links:['ref-routing-and-i-o--playing-midi-with-the-computer-keyboard','ca-takes','edit-notes'],parts:[
+        {...custom('Play the keyboard','The computer keyboard sends MIDI notes, so no MIDI controller is needed.',[
+          'Load an instrument on a MIDI track. Press M to turn on the Computer MIDI Keyboard.',
+          'Play the middle letter row (A, S, D …) for white keys from C3; the row above plays the black keys.'
+        ],[['Z / X','Octave down / up.'],['C / V','Velocity down / up, in steps of 20.'],['Single-letter shortcuts','Add Shift while the keyboard is on, such as Shift + S for Solo. Press M to turn it off.']]),cite:'routing-and-i-o#playing-midi-with-the-computer-keyboard'},
+        {...custom('Record the take','Arrangement Record writes a new clip on every armed track.',[
+          'Press Tab for Arrangement View. Arm the track. By default an armed track is monitored: you hear what you type.',
+          'Click in the track where the take should start. The insert marker moves there.',
+          'Press Arrangement Record (F9) and play. With Start Playback with Record off (Record, Warp & Launch Settings), recording waits for Play: press Space.',
+          'Press Space to stop. The take is a new MIDI clip on the track; double-click it to see its notes in Clip View.'
+        ],[['Shift + Arrangement Record','Starts recording the other way: at once, or only after Play.'],['MIDI Arrangement Overdub','On: the new clip mixes the notes already on the track with what you play.'],['Punch-In / Punch-Out','Limit recording to the Arrangement Loop’s start and end.'],['Recording on a loop','Each pass becomes a take; the newest is in the main lane.']],'Every armed track records. Clicking one Arm button unarms the others unless Cmd (Mac) / Ctrl (Windows) is held.'),cite:R+'#recording-into-the-arrangement'}
+      ]},
       action('record-audio','Record audio',R,'recording',{parts:[{reference:'record-audio'},part(R,'setting-up-file-types'),part(R,'where-are-the-recorded-samples')],covered:sources(R,'recording'),images:['audioInput'],links:['collect']}),
       action('capture','Capture',R,'capturing-midi starting-a-new-live-set adding-material-to-an-existing-live-set',{images:['transport']}),
       action('ca-overdub','Add notes',R,'overdub-recording-midi-patterns',{images:['midiSample']}),
@@ -122,7 +135,7 @@ const clipsAtlas=(()=>{
       action('ca-launch-vary','Jump / vary',L,'mixing-up-melodies-and-beats creating-nonrepetitive-structures')
     ]},
     {label:'Takes',home:'ca-takes',items:[
-      action('ca-takes','Record passes',P,'recording-takes',{extraParts:[part(R,'recording-into-the-arrangement')],aliases:sources(P,'comping'),images:['arrangement']}),
+      action('ca-takes','Record passes',P,'recording-takes',{extraParts:[part(R,'recording-into-the-arrangement')],aliases:sources(P,'comping'),images:['arrangement'],links:['ca-record-arrangement']}),
       action('ca-take-lanes','Open / add lanes',P,'take-lanes inserting-and-managing-take-lanes inserting-samples'),
       action('ca-audition','Listen across takes',P,'auditioning-take-lanes'),
       action('ca-comp','Pick / join',P,'creating-a-comp source-highlights')
@@ -136,6 +149,7 @@ const clipsAtlas=(()=>{
       const loc={area,item};locations.set(item.id,loc);
       for(const p of item.parts){
         if(p.reference){p.guide=atlasReference.items[p.reference];p.url=p.guide.source;}
+        if(p.cite){const n=m.manual.nodes.get(p.cite);if(!n)throw Error('Unknown Clips citation: '+p.cite);p.url=n.url;}
         if(p.key){
           const n=m.manual.nodes.get(p.key);if(!n)throw Error('Unknown Clips source: '+p.key);
           p.guide=n.guide||atlasReference.items[n.id];p.url=n.url;
@@ -145,7 +159,7 @@ const clipsAtlas=(()=>{
       }
       if(item.lead)item.parts[0].guide={...item.parts[0].guide,...item.lead};
       const keys=[...item.parts.map(p=>p.key).filter(Boolean),...(item.covered||[]),...(item.aliases||[])];
-      item.url=item.parts.find(p=>p.url)?.url||m.manual.nodes.get(keys[0])?.url;
+      item.url=(item.cite&&m.manual.nodes.get(item.cite)?.url)||item.parts.find(p=>p.url)?.url||m.manual.nodes.get(keys[0])?.url;
       if(!item.url)throw Error('Missing Clips citation: '+item.id);
       for(const key of keys){
         const node=m.manual.nodes.get(key);if(!node)throw Error('Unknown Clips coverage: '+key);
