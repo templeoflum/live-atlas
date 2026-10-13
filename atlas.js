@@ -260,7 +260,7 @@ function captureFigure(id){
 }
 let activeCapture=null,fullCapture=false,actualCapture=false;
 function fitCapture(){
-  const c=captures[activeCapture];if(!c||!$('#captureDialog').open)return;
+  const c=captures[activeCapture];if(!c||!$('#captureDialog').hasAttribute('open'))return;
   const [, ,w,h]=captureBounds(c,fullCapture);
   const availableWidth=$('#captureScroll').clientWidth;
   const availableHeight=Math.max(80,innerHeight*.92-$('#captureToolbar').offsetHeight-$('#captureCaption').offsetHeight-64);
@@ -282,13 +282,13 @@ function renderCapture(){
   $('#captureScroll').scrollTo(0,0);
   fitCapture();
 }
-function openCapture(id){
+function openCapture(id,opener){
   const c=captures[id];if(!c)return;
   activeCapture=id;fullCapture=false;
   $('#captureTitle').textContent=c.title;
   $('#captureCaption').textContent=c.caption+' · '+(c.credit||'Captured in Ableton Live on macOS.');
   renderCapture();
-  $('#captureDialog').showModal();
+  atlasDialogs.open($('#captureDialog'),opener);
   fitCapture();
 }
 let currentView='overview', platform='mac';
@@ -511,7 +511,7 @@ document.addEventListener('click',ev=>{
   if(workspaceAtlas.click(ev))return;
   if(devicesAtlas.click(ev))return;
   if(historyAtlas.click(ev))return;
-  const capture=ev.target.closest('[data-capture]');if(capture){const failed=capture.querySelector('.is-error');if(failed)retryCapture(failed);else openCapture(capture.dataset.capture);return;}
+  const capture=ev.target.closest('[data-capture]');if(capture){const failed=capture.querySelector('.is-error');if(failed)retryCapture(failed);else openCapture(capture.dataset.capture,capture);return;}
   const sessionButton=ev.target.closest('[data-session]');if(sessionButton){setSession(sessionButton.dataset.session==='start');return;}
   const filter=ev.target.closest('[data-trace-filter]');if(filter){traceFilter=filter.dataset.traceFilter;renderFlags();return;}
   const flag=ev.target.closest('[data-flag]');
@@ -555,10 +555,10 @@ document.addEventListener('change',ev=>{
 });
 $('#platform').addEventListener('change',ev=>changePlatform(ev.target.value));
 document.addEventListener('visibilitychange',()=>{if(document.hidden){midiPilot.stop();clipsAtlas.stop();}});
-$('#captureClose').addEventListener('click',()=>$('#captureDialog').close());
+$('#captureClose').addEventListener('click',()=>atlasDialogs.close($('#captureDialog')));
 $('#captureRetry').addEventListener('click',()=>retryCapture($('#captureMedia .capture-frame')));
 $('#captureContext').addEventListener('click',()=>{fullCapture=!fullCapture;renderCapture();});
-$('#captureDialog').addEventListener('click',ev=>{if(ev.target===$('#captureDialog')){const r=ev.target.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)ev.target.close();}});
+$('#captureDialog').addEventListener('click',ev=>{if(ev.target===$('#captureDialog')){const r=ev.target.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)atlasDialogs.close(ev.target);}});
 $('#captureScale').addEventListener('click',()=>{actualCapture=!actualCapture;$('#captureScale').setAttribute('aria-pressed',actualCapture);$('#captureScale').textContent=actualCapture?'Fit to view':'Actual size';fitCapture();});
 window.addEventListener('resize',fitCapture);
 function retryCapture(frame){

@@ -136,7 +136,7 @@ const cardNavigation=(()=>{
     }
     if(ev.target.closest('[data-card-hold]')){
       remember();if(trail.hold()){
-        const held=trail.held().at(-1);snapshots.set(held.key,{node:document.querySelector('#insp-'+held.view).cloneNode(true),position:{...held.position}});
+        const held=trail.held().slice(-1)[0];snapshots.set(held.key,{node:document.querySelector('#insp-'+held.view).cloneNode(true),position:{...held.position}});
         ctx.announce(shortTitle(held)+' held for this visit.');
       }update();return true;
     }

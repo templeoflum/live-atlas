@@ -81,7 +81,7 @@ const vocabulary=(()=>{
         const t=byIndex[m.slice(1).findIndex(Boolean)];
         if(!t||used.has(t.term)||currentIds.includes(t.home))continue;
         if(t.exact&&!new RegExp(`^(?:${t.match})$`).test(m[0]))continue;
-        used.add(t.term);frag??=document.createDocumentFragment();
+        used.add(t.term);if(frag===null)frag=document.createDocumentFragment();
         frag.append(text.slice(last,m.index));
         const b=document.createElement('button');b.type='button';b.className='term';b.dataset.term=t.term;b.textContent=m[0];b.setAttribute('aria-haspopup','dialog');
         frag.append(b);last=m.index+m[0].length;

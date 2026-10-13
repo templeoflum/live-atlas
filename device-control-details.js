@@ -141,7 +141,7 @@ const deviceControlDetails=(()=>{
       const node=manual.nodes.get(block.key);
       if(!item||!node)throw Error('Invalid reviewed control destination: '+block.device+'/'+block.action+' '+block.key);
       if(!item.sources.some(n=>n.key===node.key))item.sources.push(node);
-      let section=(item.manualSections||=[]).find(s=>s.key===block.key);
+      let section=(item.manualSections||(item.manualSections=[])).find(s=>s.key===block.key);
       if(!section){section={key:block.key,label:node.title,url:node.url,images:[]};item.manualSections.push(section);}
       section.controls=block.terms;section.note=block.note;
     }

@@ -19,7 +19,7 @@ const manualCompletion=(()=>{
   function extend(areas){
     const place=id=>{const p=areas.find(p=>p.id===id);if(!p)throw Error('Missing place '+id);return p;};
     const add=(family,id,label,items)=>areas.push({family,id,label,items});
-    const append=(id,item)=>{const parent=place(id).items[0];(parent.details||=[]).push(item);};
+    const append=(id,item)=>{const parent=place(id).items[0];(parent.details||(parent.details=[])).push(item);};
     append('views',concept('live-concepts','Find the working object','A Set contains tracks. A track holds clips and a device chain. Select the object you want to change before entering its editor.'));
     append('views',concept('clip-and-device-view','Stack the editors','Clip View edits one clip’s content and playback settings; Device View edits the selected track’s signal-processing chain.',[
       'Use the small triangles beside the Clip and Device selectors at the bottom right to stack both editors.',
@@ -246,7 +246,7 @@ const manualCompletion=(()=>{
       if(!loc||!node)throw Error('Missing concept destination '+id);
       const guide={...data,title:data.label};
       if(owner===clips)loc.item.parts.push({key:data.key,label:data.label,guide,url:node.url});
-      else (loc.item.contexts||=[]).push({key:data.key,guide,url:node.url});
+      else (loc.item.contexts||(loc.item.contexts=[])).push({key:data.key,guide,url:node.url});
       owner.sourceHomes.set(data.key,loc);owner.locations.set(node.id,loc);
       const entry=entries.get(node.id);entry.view=owner===clips?'clips':'devices';node.view=entry.view;entry.atlasContext=loc.area.label+' › '+loc.item.label;
     }

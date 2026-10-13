@@ -156,7 +156,7 @@ const shortcutExplorer=(()=>{
       <dl class="shortcut-gestures">${visibleKeys(node).map(({row,index})=>`<div id="shortcut-gesture-${index}" tabindex="-1"><dt>${e(actionLabel(row))}</dt><dd>${row[ctx.platform()]?`<kbd>${e(keyText(row[ctx.platform()]))}</kbd>`:'<span class="context-note">Not listed for Windows</span>'}</dd></div>`).join('')}</dl>
       ${node.image?`<section class="reference-section shortcut-in-live"><h4>In Live</h4>${ctx.captureFigure(node.image)}</section>`:''}
       ${node.entry?`<div class="detail-links"><button data-entry="${node.entry}">${e(model.entries.get(node.entry).title)} ↗</button></div>`:''}
-      <div class="shortcut-neighbors" aria-label="Nearby actions">${node.parents.at(-1)?.children.filter(n=>n!==node).map(n=>`<button data-entry="${n.route}">${e(n.label)} ↗</button>`).join('')||''}</div>`}
+      <div class="shortcut-neighbors" aria-label="Nearby actions">${node.parents[node.parents.length-1]?.children.filter(n=>n!==node).map(n=>`<button data-entry="${n.route}">${e(n.label)} ↗</button>`).join('')||''}</div>`}
       <div class="workspace-source">${node.keys?[...new Set(node.keys.map(k=>k.row.section))].map((section,i)=>`<a href="${e(model.manual.nodes.get('live-keyboard-shortcuts#'+section).url)}" target="_blank" rel="noreferrer">${i?'Related manual section':'Ableton manual'} ↗</a>`).join(''):''}${ctx.flagHTML(activeId)}</div>`;
   }
   function mount(target,entry,context){

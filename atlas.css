@@ -217,7 +217,7 @@ figure.live-figure.manual-icon{display:flex;align-items:center;gap:.6rem;margin:
 .live-figure figcaption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.3rem 1rem;color:var(--muted);font-size:.75rem;margin-top:.45rem}
 .live-figure figcaption span:last-child{white-space:nowrap;color:var(--ivory-dim)}
 .live-example{border-top:1px solid var(--line);margin-top:1.1rem;padding-top:.1rem}.example-keys{display:flex;flex-wrap:wrap;gap:.5rem}.live-example p{font-size:.83rem;color:var(--ivory-dim);margin-top:.7rem}
-.capture-dialog{margin:auto;width:min(var(--capture-width,1440px),96vw);max-width:96vw;max-height:92dvh;padding:1rem;border:1px solid var(--line-lit);border-radius:8px;background:var(--lacquer);color:var(--ivory);box-shadow:var(--shadow)}
+.capture-dialog{margin:auto;width:min(var(--capture-width,1440px),96vw);max-width:96vw;max-height:92vh;max-height:92dvh;padding:1rem;border:1px solid var(--line-lit);border-radius:8px;background:var(--lacquer);color:var(--ivory);box-shadow:var(--shadow)}
 .capture-dialog[open]{display:flex;flex-direction:column}
 .capture-dialog::backdrop{background:#000c;backdrop-filter:blur(5px)}
 .capture-toolbar{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin-bottom:1rem;flex-shrink:0}
@@ -248,7 +248,7 @@ footer{display:flex;align-items:flex-start;justify-content:space-between;gap:2re
 
 /* Persistent topic index and reading pane. Images are content, not navigation. */
 .tc{min-height:145px;padding:1.05rem 1.25rem}.tc-name{font-size:1.55rem;margin:.4rem 0}.tc-tag{font-size:.85rem;padding-right:1rem}.tc-enter{position:absolute;right:1rem;top:.8rem;margin:0;font-size:1.2rem}.tc:hover{transform:translateY(-2px)}
-body.exploring{height:100dvh;overflow:hidden;display:flex;flex-direction:column}
+body.exploring{height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column}
 body.exploring .atlas-header{position:relative;flex-shrink:0}
 body.exploring main{display:flex;flex-direction:column;flex:1;min-height:0;width:100%;max-width:1440px;padding:1.1rem clamp(1rem,3vw,2.4rem) .8rem;overflow:hidden}
 body.exploring .view.active{display:flex;flex-direction:column;flex:1;min-height:0;animation:none}
@@ -260,7 +260,7 @@ body.exploring .split.has-side{grid-template-columns:clamp(210px,28vw,280px) min
 body.exploring .inspector{position:static;align-self:stretch;min-width:0;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line-lit) transparent;padding:1.25rem;scroll-padding:1rem}
 .selector-pane:focus-visible,.inspector:focus-visible{outline-offset:-3px}
 body.exploring .inspector .live-figure{max-width:none}
-body.exploring footer{flex-shrink:0;width:100%;max-width:1440px;max-height:25dvh;overflow-y:auto;padding:.5rem clamp(1rem,3vw,2.4rem);flex-direction:row;gap:1rem;font-size:.68rem}
+body.exploring footer{flex-shrink:0;width:100%;max-width:1440px;max-height:25vh;max-height:25dvh;overflow-y:auto;padding:.5rem clamp(1rem,3vw,2.4rem);flex-direction:row;gap:1rem;font-size:.68rem}
 body.exploring footer summary{font-size:.75rem}body.exploring footer details{text-align:right}
 .topic-picker{display:none}
 .index-group+.index-group{margin-top:1.1rem}.index-group h3,.selector-pane .section-label{font:500 .68rem var(--f-mono);text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 .45rem}
@@ -398,7 +398,7 @@ section.reference-section{padding-bottom:.85rem}
 .manual-image-pair p{font:.75rem var(--f-mono);color:var(--ivory-dim);margin-bottom:.5rem}
 .manual-image-pair .live-figure{margin:0}
 #atlasFindQuery{width:100%;min-width:0;border:1px solid var(--line-lit);border-radius:5px;background:var(--lacquer);color:var(--ivory);padding:.7rem;font:.9rem var(--f-body)}
-.atlas-find-dialog{position:fixed;inset:0;margin:auto;width:min(620px,calc(100vw - 2rem));max-height:min(740px,88dvh);padding:1.2rem;background:var(--lacquer2);color:var(--ivory);border:1px solid var(--line-lit);border-radius:10px;box-shadow:var(--shadow);overflow:auto}
+.atlas-find-dialog{position:fixed;inset:0;margin:auto;width:min(620px,calc(100vw - 2rem));max-height:min(740px,88vh);max-height:min(740px,88dvh);padding:1.2rem;background:var(--lacquer2);color:var(--ivory);border:1px solid var(--line-lit);border-radius:10px;box-shadow:var(--shadow);overflow:auto}
 .atlas-find-dialog::backdrop{background:rgba(0,0,0,.7)}
 .find-heading{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem}
 .find-heading h2{font:500 1.6rem var(--f-disp)}
@@ -553,7 +553,7 @@ body .inspector.held-preview.workspace-inspector{overflow:hidden}
 .held-card-slot [data-card-peek]{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:0;text-align:left}
 .held-card-slot [data-card-release]{flex-shrink:0;font-size:1rem}
 .card-navigation-away{position:relative;max-width:780px;margin:0 0 1rem auto}
-body .inspector.held-preview-away{inset:100% 0 auto 0;align-self:auto;height:min(70dvh,650px);min-height:240px}
+body .inspector.held-preview-away{inset:100% 0 auto 0;align-self:auto;height:min(70vh,650px);height:min(70dvh,650px);min-height:240px}
 .neighborhood-description{font:.95rem/1.55 var(--f-body);color:var(--ivory-dim);margin:0}
 .neighborhood-choices{margin:.1rem 0 .8rem;gap:.65rem}
 .neighborhood-choices button{padding:.85rem .9rem}
@@ -580,3 +580,8 @@ body .inspector.held-preview-away{inset:100% 0 auto 0;align-self:auto;height:min
 .choice-thumb{display:block;height:96px;margin:-.35rem -.4rem .15rem;border-radius:4px;background:rgba(0,0,0,.28);overflow:hidden}
 .choice-thumb img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
 @media(max-width:639px){.choice-thumb{height:84px}}
+
+/* Non-native dialog containment. */
+dialog:not([open]){display:none}
+.dialog-shade{position:fixed;top:0;right:0;bottom:0;left:0;background:#000c;z-index:10000}
+dialog.dialog-fallback[open]{position:fixed;top:0;right:0;bottom:0;left:0;margin:auto;z-index:10001;height:fit-content}

@@ -1,3 +1,42 @@
+const atlasDialogs=(()=>{
+  const states=new Map();
+  function close(dialog){
+    const state=states.get(dialog);
+    if(!state){if(typeof dialog.close==='function')dialog.close();return;}
+    dialog.removeAttribute('open');dialog.classList.remove('dialog-fallback');
+    dialog.removeAttribute('aria-modal');
+    if(state.role===null)dialog.removeAttribute('role');else dialog.setAttribute('role',state.role);
+    state.shade.remove();
+    document.removeEventListener('keydown',state.keydown,true);
+    document.removeEventListener('focusin',state.focusin,true);
+    states.delete(dialog);dialog.dispatchEvent(new Event('close'));
+    if(state.previous?.isConnected)state.previous.focus();
+  }
+  function open(dialog,previous=document.activeElement){
+    if(typeof dialog.showModal==='function'){dialog.showModal();return;}
+    if(states.has(dialog))return;
+    const role=dialog.getAttribute('role');
+    const shade=document.createElement('div');shade.className='dialog-shade';
+    const controls=()=>Array.from(dialog.querySelectorAll('button,input,select,textarea,a[href],[tabindex]')).filter(el=>!el.disabled&&el.tabIndex>=0&&el.getClientRects().length);
+    const focus=()=>{const first=controls()[0];if(first)first.focus();};
+    const focusin=ev=>{if(!dialog.contains(ev.target))focus();};
+    const keydown=ev=>{
+      if(ev.key==='Escape'){ev.preventDefault();ev.stopImmediatePropagation();const cancel=new Event('cancel',{cancelable:true});if(dialog.dispatchEvent(cancel))close(dialog);return;}
+      if(ev.key==='Tab'){
+        const items=controls(),index=items.indexOf(document.activeElement);
+        ev.preventDefault();ev.stopImmediatePropagation();
+        if(items.length)items[(index+(ev.shiftKey?-1:1)+items.length)%items.length].focus();
+      }
+    };
+    states.set(dialog,{previous,role,shade,keydown,focusin});
+    shade.addEventListener('click',()=>close(dialog));document.body.append(shade);
+    dialog.classList.add('dialog-fallback');dialog.setAttribute('role','dialog');
+    dialog.setAttribute('aria-modal','true');dialog.setAttribute('open','');
+    document.addEventListener('keydown',keydown,true);document.addEventListener('focusin',focusin,true);
+    focus();
+  }
+  return {open,close};
+})();
 // The complete source map is separate from the authored atlas layer.
 // A section with only a verified link is never counted as a rewritten guide.
 const manualAtlas = (() => {
@@ -5,7 +44,7 @@ const manualAtlas = (() => {
   let entries,ctx;
   const homes={1:'history',2:'workspace',3:'workspace',4:'workspace',5:'workspace',6:'workspace',7:'workspace',8:'clips',9:'clips',10:'clips',11:'clips',12:'clips',13:'clips',14:'clips',15:'clips',16:'clips',17:'workspace',18:'workspace',19:'clips',20:'workspace',21:'clips',22:'clips',23:'devices',24:'devices',25:'workspace',26:'clips',27:'workspace',28:'devices',29:'devices',30:'devices',31:'devices',32:'devices',33:'workspace',34:'workspace',35:'workspace',36:'workspace',37:'workspace',38:'workspace',39:'workspace',40:'workspace',41:'workspace',42:'history'};
   const chapterNames={2:'Setup & help',3:'Live’s objects',4:'Browser',5:'Files & projects',6:'Arrangement',7:'Session',8:'Clip properties',9:'Warp & tempo',10:'MIDI editing',11:'MIDI tools',12:'MPE',13:'Audio → MIDI',14:'Grooves',15:'Tunings',16:'Launch behavior',17:'Routing',18:'Mixing',19:'Recording',20:'Bounce to audio',21:'Comping',22:'Stem separation',23:'Using devices',24:'Racks',25:'Automation',26:'Clip envelopes',27:'Video',28:'Audio effects',29:'MIDI effects',30:'Instruments',31:'Max for Live',32:'Max devices',33:'Remote control',34:'Push 1',35:'Push 2',36:'Synchronization',37:'Performance & resources',38:'Audio behavior',39:'MIDI timing',40:'Accessibility',41:'Shortcuts',42:'Credits',1:'About Live'};
-  const keyOf=url=>{const u=new URL(url);return u.pathname.split('/').filter(Boolean).at(-1)+'#'+u.hash.slice(1);};
+  const keyOf=url=>{const u=new URL(url);return u.pathname.split('/').filter(Boolean).slice(-1)[0]+'#'+u.hash.slice(1);};
   const clean=s=>String(s).toLowerCase().replace(/⌘|\bcommand\b/g,' cmd ').replace(/⌥|\boption\b/g,' alt ').replace(/⇧/g,' shift ').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
   const matches=(query,value)=>{const haystack=clean(value),words=haystack.split(' ');return query.split(' ').every(t=>t.length===1?words.includes(t):haystack.includes(t));};
   const keyQuery=query=>query.split(' ').some(t=>['cmd','ctrl','alt','shift'].includes(t));
@@ -119,13 +158,13 @@ const manualAtlas = (() => {
   }
   function bind(context){
     ctx=context;
-    document.querySelector('#atlasFindOpen').addEventListener('click',()=>{const d=document.querySelector('#atlasFind');d.showModal();d.querySelector('input').focus();});
-    document.querySelector('#atlasFindClose').addEventListener('click',()=>document.querySelector('#atlasFind').close());
+    document.querySelector('#atlasFindOpen').addEventListener('click',()=>{const d=document.querySelector('#atlasFind');atlasDialogs.open(d,document.querySelector('#atlasFindOpen'));d.querySelector('input').focus();});
+    document.querySelector('#atlasFindClose').addEventListener('click',()=>atlasDialogs.close(document.querySelector('#atlasFind')));
     document.querySelector('#atlasFindQuery').addEventListener('input',findResults);
     document.querySelector('#atlasFindQuery').addEventListener('keydown',ev=>{if(['ArrowDown','Enter'].includes(ev.key)){const first=document.querySelector('[data-find-entry]');if(first){ev.preventDefault();if(ev.key==='Enter')first.click();else first.focus();}}});
     document.querySelector('#atlasFindResults').addEventListener('click',ev=>{
       const button=ev.target.closest('[data-find-entry]');if(!button)return;
-      document.querySelector('#atlasFind').close();context.selectEntry(button.dataset.findEntry);
+      atlasDialogs.close(document.querySelector('#atlasFind'));context.selectEntry(button.dataset.findEntry);
       if(button.dataset.findShortcutRow!==undefined&&typeof shortcutExplorer!=='undefined')shortcutExplorer.focusRow(Number(button.dataset.findShortcutRow));
     });
   }

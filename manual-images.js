@@ -107,7 +107,7 @@ const manualImages=(()=>{
           if(covered)part=loc.item.parts[0];
           else {part={key:figure.key,label:node.title,guide:node.guide||{body:'',steps:[],terms:[],note:'',images:[]},url:node.url,images:[]};loc.item.parts.push(part);}
         }
-        (part.images||=[]).push(figure.id);
+        (part.images||(part.images=[])).push(figure.id);
       }else{
         if(!figure.inline&&!figure.error&&!loc.item.leadImage)loc.item.leadImage=figure.id;
         let section=loc.item.manualSections.find(s=>s.key===figure.key);
