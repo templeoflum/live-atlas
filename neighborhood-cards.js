@@ -32,7 +32,7 @@ const neighborhoodCards=(()=>{
     if(references.length)add('history','references','Credits & reference','Credits and introductory material from the manual.',references.map(id=>({id,label:m.entries.get(id).title,hint:''})));
     for(const view of Object.keys(groups))selected[view]=groups[view][0].id;
     // Each destination shows its card's first full manual figure; none means no picture.
-    if(typeof manualImages!=='undefined'&&typeof manualImagesData!=='undefined'&&!(typeof publicBuild!=='undefined'&&publicBuild===true)){
+    if(typeof manualImages!=='undefined'&&typeof manualImagesData!=='undefined'){
       const files=new Map(manualImagesData.figures.map(f=>[f.id,f.file]));
       for(const p of manualImages.placements){
         if(p.inline||!p.available||p.view==='history')continue;

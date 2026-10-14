@@ -6,8 +6,6 @@ const historyImages=(()=>{
   function install(captures){for(const f of figures.values())captures[f.id]={...f,previewHeight:280};}
   function figure(id,{esc},compact=false){
     const f=get(id);if(!f)return '';
-    // Public build: no hosted copy, only a link to where the image is published.
-    if(typeof publicBuild!=='undefined'&&publicBuild===true)return `<figure class="live-figure history-figure figure-link${compact?' history-period-figure':''}"><a href="${esc(f.source)}" target="_blank" rel="noreferrer"><span class="figure-link-kind">Image</span><span class="figure-link-title">${esc(f.title)}</span><span class="history-image-caption">${esc(f.caption)}</span><span class="figure-link-source">${esc(f.credit)} ↗</span></a></figure>`;
     const width=Math.min(f.width/(f.pixelRatio||1),(compact?100:280)*f.width/f.height,compact?220:720);
     return `<figure class="live-figure history-figure${compact?' history-period-figure':''}">
       <button class="capture-button" data-capture="${f.id}" aria-label="Enlarge ${esc(f.title)} image">
