@@ -11,10 +11,13 @@ review against the Live 12 manual finished September 25 (`MANUAL_CONTENT_REVIEW.
 already here.
 
 **Publishing.** The atlas is a static page; `serve.mjs` is only a local preview.
-`node build-pages.mjs` copies exactly what the page loads (index, CSS, 40 scripts,
-1,137 credited images, about 153 MB) into `../site`, which is its own git
-repository for GitHub Pages. It never copies `manual-research`, tests, docs,
-snapshots or unused media. After editing here: rebuild, then commit and push in
+`node build-pages.mjs` copies exactly what the page loads (index, CSS and its
+scripts) into `../site`, which is its own git repository for GitHub Pages. It never
+copies `manual-research`, tests, docs, snapshots or unused media. Since 14 Oct 2026
+it is a public build: no manual figures or history images are copied, and each
+figure renders as a link to its manual page or source (`tmp/THIRD_PARTY_INVENTORY.md`).
+The local preview still shows every image. `--with-images` restores the earlier
+build that hosts them; it is not for publishing. After editing here: rebuild, then commit and push in
 `../site`. Flags and the trace live in each browser's localStorage under
 `ableton-live-atlas.*` keys.
 
@@ -43,7 +46,8 @@ Top navigation has the same alignment and padding on every tab.
 Run `node --test devices.test.cjs clips.test.cjs workspace.test.cjs
 workspace-media.test.cjs shortcut-explorer.test.cjs atlas.test.cjs manual.test.cjs
 reference.test.cjs record-midi.test.cjs manual-card-audit.test.cjs
-manual-images.test.cjs device-control-details.test.cjs manual-content-audit.test.cjs`, then `node serve.test.cjs` against the
+manual-images.test.cjs device-control-details.test.cjs manual-content-audit.test.cjs
+public-build.test.cjs`, then `node serve.test.cjs` against the
 local preview.
 
 ## Vocabulary

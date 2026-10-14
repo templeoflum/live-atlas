@@ -251,8 +251,11 @@ function capturePicture(c,full=false,lazy=false){
 }
 function captureBounds(c,full=false){return c.crop&&!full?c.crop:[0,0,c.width,c.height];}
 function captureDisplayWidth(c,full=false){return captureBounds(c,full)[2]/(c.pixelRatio||1);}
+// The public build (build-pages.mjs) hosts no third-party images: each figure is a link to its source page.
+const linkFigures=typeof publicBuild!=='undefined'&&publicBuild===true;
 function captureFigure(id){
   const c=captures[id];if(!c)return '';
+  if(linkFigures&&!c.error)return `<figure class="live-figure figure-link${c.inline?' manual-icon':''}"><a href="${esc(c.source)}" target="_blank" rel="noreferrer"><span class="figure-link-kind">${c.inline?'Manual icon':'Manual figure'}</span><span class="figure-link-title">${esc(c.title)}</span><span class="figure-link-source">Ableton Live 12 Manual ↗</span></a></figure>`;
   if(c.error)return `<p class="manual-image-unavailable"><a href="${esc(c.source)}" target="_blank" rel="noreferrer">${esc(c.title)} · source image unavailable ↗</a></p>`;
   if(c.inline)return `<figure class="live-figure manual-icon" data-manual-icon="${id}"><span class="manual-icon-chip"><img src="assets/${esc(c.file)}" alt="" width="${c.width}" height="${c.height}" style="width:${captureDisplayWidth(c)*Math.max(1,18/(c.height/(c.pixelRatio||1)))}px"></span><figcaption>${esc(c.title)}</figcaption></figure>`;
   const picture=capturePicture(c,false,true);
