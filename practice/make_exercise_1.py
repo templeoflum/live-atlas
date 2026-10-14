@@ -24,45 +24,58 @@ VIEW_SHAPE = os.path.join(CORE, 'Templates/8-Track Template.als')
 OUT_ALS = os.path.join(HERE, 'navigation-exercise-1.als')
 OUT_MD = os.path.join(HERE, 'EXERCISE_1.md')
 
-# where: 'session' steps become scenes (read top to bottom in Session View);
-# 'arrangement' steps become locators (read left to right in Arrangement View).
+# Hedawn opened the first version (T-0410): scene names at Live's default width cut the steps off.
+# The track and scene column are widened instead. 226 is a MIDI track width Ableton ships in a
+# factory Set (Building Max Devices, MIDI Echo.als); the default is 93 for a track, 84 for Main.
+# Live's small font gives roughly 6 px a character, so a 226 px column holds about 34; the
+# budgets below leave room for the launch button. The script stops if a name is longer.
+TRACK_WIDTH = MAIN_WIDTH = '226'
+CLIP_CHARS = SCENE_CHARS = 30
+LOCATOR_CHARS = 36
+LOCATOR_GAP = 32  # beats between locators: 8 bars, so a name has room before the next one
+
+# where: 'session' steps become rows in Session View, read top to bottom: the clip in the row
+# is named with the step, the scene name beside it holds the keys. 'arrangement' steps become
+# locators, read left to right in Arrangement View.
+# label: the step as Live shows it; it must fit the column (see the widths below).
+# do: the full step, carried as info text on the clip, scene or locator.
 # keys: exact action names from the manual's shortcut table (manualData.shortcuts).
 STEPS = [
     dict(where='session', card='ref-first-steps--info-view', keys=['Hide/Show Info View'],
-         label='Info View',
-         do='Show Info View, the help area at the bottom left. From now on, hover over a scene name to read that step in full there.'),
+         label="Show Info View",
+         do='Show Info View, the help area at the bottom left. From now on, hover over a step to read it in full there.'),
     dict(where='session', card='session', keys=['Toggle Session/Arrangement View'],
-         label='Switch views',
+         label="Go to Arrangement and back",
          do='Go to Arrangement View, then back here to Session View. If Tab moves focus instead, Use Tab to Move Focus is on in Settings.'),
     dict(where='session', card='clips', keys=[], click='Click the clip name',
-         label='Select the clip',
-         do='Click the name of the clip "Select me" in this row. Click the name, not the triangle: the triangle launches it.'),
+         label="Click this clip's name",
+         do='Click the name of this clip. Click the name, not the triangle: the triangle launches it.'),
     dict(where='session', card='clip-view', keys=['Toggle Between Device/Clip View'],
-         label='Clip View',
+         label="Show Clip View",
          do='Make the bottom panel show Clip View: the selected clip\'s (empty) notes and settings. If it already does, press the keys twice to see them switch.'),
     dict(where='session', card='device-view', keys=['Toggle Between Device/Clip View'],
-         label='Device View',
+         label="Show Device View",
          do='Swap the bottom panel to Device View: this track\'s devices, empty for now.'),
     dict(where='session', card='hide-browser', keys=['Hide/Show Browser'],
-         label='Browser',
+         label="Show the Browser",
          do='Show the Browser on the left, if it is hidden.'),
     dict(where='session', card='browser', keys=['Search in Browser', 'Jump to Search Results'],
-         label='Search Drift',
+         label="Find Drift in the Browser",
          do='Search the Browser for Drift, then jump down to the results.'),
     dict(where='session', card='instrument', keys=['Add Device from Browser'],
-         label='Load Drift',
+         label="Load Drift onto this track",
          do='With Drift highlighted, load it. It appears in Device View on this track.'),
     dict(where='arrangement', card='arrangement', keys=['Toggle Session/Arrangement View'],
-         label='Arrangement',
+         label="Go to Arrangement View",
          do='Go to Arrangement View. The rest of the steps are these locators, left to right.'),
     dict(where='arrangement', card='ca-arm', keys=['Arm Selected Tracks'],
-         label='Arm',
+         label="Arm this track",
          do='Arm the selected track. Arm it before step 11: with the computer keyboard on, C changes velocity instead.'),
     dict(where='arrangement', card='keys-typing', keys=['Computer MIDI Keyboard'],
-         label='Computer keyboard',
+         label="Keys on, play A S D F",
          do='Turn on the Computer MIDI Keyboard, then press A, S, D and F to hear Drift.'),
     dict(where='arrangement', card='ca-record-arrangement', keys=['Record', 'Play from Start Marker/Stop'],
-         label='Record',
+         label="Record a take",
          do='Record into the Arrangement, play a few keys, then stop. A new clip appears on the track.'),
 ]
 
@@ -104,8 +117,27 @@ def keys_text(s):
     return ', then '.join(mac(r) for r in s['rows']) if s['rows'] else s['click']
 
 
-def short_name(s):
+def clip_name(s):
+    return f"{s['n']} {s['label']}"
+
+
+def scene_name(s):
+    return f"{s['n']} · {keys_text(s)}"
+
+
+def locator_name(s):
     return f"{s['n']} {s['label']} · {keys_text(s)}"
+
+
+def check_fit():
+    long = []
+    for s in STEPS:
+        names = ([(clip_name(s), CLIP_CHARS), (scene_name(s), SCENE_CHARS)] if s['where'] == 'session'
+                 else [(locator_name(s), LOCATOR_CHARS)])
+        long += [f"step {s['n']}: '{n}' is {len(n)} characters, the column holds {limit}"
+                 for n, limit in names if len(n) > limit]
+    if long:
+        sys.exit('Names would be cut off in Live:\n  ' + '\n  '.join(long))
 
 
 def info_text(s):
@@ -139,7 +171,11 @@ def build():
     ls.remove(old)
     ls.insert(at, vs)
 
-    # Scenes: one per Session step, named so the list reads as the exercise.
+    # Wider track and scene column, so the names below show in full.
+    set_value(track, 'DeviceChain/Mixer/ViewStateSessionTrackWidth', TRACK_WIDTH)
+    set_value(main, 'DeviceChain/Mixer/ViewStateSessionTrackWidth', MAIN_WIDTH)
+
+    # Scenes: one per Session step; the name holds the keys, beside that step's clip.
     scenes = ls.find('Scenes')
     proto = scenes[0]
     for c in list(scenes):
@@ -147,7 +183,7 @@ def build():
     for i, s in enumerate(session):
         sc = copy.deepcopy(proto)
         sc.set('Id', str(i))
-        set_value(sc, 'Name', short_name(s))
+        set_value(sc, 'Name', scene_name(s))
         set_value(sc, 'Annotation', info_text(s))
         scenes.append(sc)
 
@@ -162,31 +198,30 @@ def build():
                 cs.set('Id', str(i))
                 lst.append(cs)
 
-    # One empty one-bar MIDI clip, "Select me", in the scene for the select-a-clip step.
-    clip_root = load(CLIP_SHAPE)
-    clip = copy.deepcopy(next(clip_root.iter('MidiClip')))
-    clip.set('Id', '0')
-    for path, v in [('CurrentEnd', '4'), ('Loop/LoopEnd', '4'), ('Loop/OutMarker', '4'),
-                    ('Loop/HiddenLoopEnd', '4'), ('ScrollerTimePreserver/RightTime', '4'),
-                    ('TimeSelection/AnchorTime', '0'), ('TimeSelection/OtherTime', '0'),
-                    ('Name', 'Select me'), ('Color', '13'),
-                    ('Notes/NoteIdGenerator/NextId', '1')]:
-        set_value(clip, path, v)
-    kts = clip.find('Notes/KeyTracks')
-    for c in list(kts):
-        kts.remove(c)
-    pick = next(i for i, s in enumerate(session) if s['card'] == 'clips')
-    set_value(clip, 'Annotation', info_text(session[pick]) + ' ' + info_text(session[pick + 1]))
-    slot = track.find('DeviceChain/MainSequencer/ClipSlotList')[pick].find('ClipSlot')
-    value = slot.find('Value')
-    value.append(clip)
+    # One empty one-bar MIDI clip per Session step, named with the step. Step 3 is to click one.
+    shape = next(load(CLIP_SHAPE).iter('MidiClip'))
+    slots = track.find('DeviceChain/MainSequencer/ClipSlotList')
+    for i, s in enumerate(session):
+        clip = copy.deepcopy(shape)
+        clip.set('Id', str(i))
+        for path, v in [('CurrentEnd', '4'), ('Loop/LoopEnd', '4'), ('Loop/OutMarker', '4'),
+                        ('Loop/HiddenLoopEnd', '4'), ('ScrollerTimePreserver/RightTime', '4'),
+                        ('TimeSelection/AnchorTime', '0'), ('TimeSelection/OtherTime', '0'),
+                        ('Name', clip_name(s)), ('Color', '13' if s['card'] == 'clips' else '0'),
+                        ('Annotation', info_text(s)),
+                        ('Notes/NoteIdGenerator/NextId', '1')]:
+            set_value(clip, path, v)
+        kts = clip.find('Notes/KeyTracks')
+        for c in list(kts):
+            kts.remove(c)
+        slots[i].find('ClipSlot/Value').append(clip)
 
     # Locators: a pointer to Session View at bar 1, then one per Arrangement step every two bars.
     locs = ls.find('Locators/Locators')
     first = session[0]['n'], session[-1]['n']
-    entries = [(0, f"Steps {first[0]}-{first[1]} are in Session View · Tab",
-                f"This Set is exercise 1 from the atlas. Steps {first[0]} to {first[1]} are the scene names in Session View (press Tab). Steps {arrangement[0]['n']} to {arrangement[-1]['n']} are the locators here.")]
-    entries += [(8 * (i + 1), short_name(s), info_text(s)) for i, s in enumerate(arrangement)]
+    entries = [(0, f"Steps {first[0]}-{first[1]}: Session View · Tab",
+                f"This Set is exercise 1 from the atlas. Steps {first[0]} to {first[1]} are the rows in Session View (press Tab). Steps {arrangement[0]['n']} to {arrangement[-1]['n']} are the locators here.")]
+    entries += [(LOCATOR_GAP * (i + 1), locator_name(s), info_text(s)) for i, s in enumerate(arrangement)]
     for i, (t, name, note) in enumerate(entries):
         loc = ET.SubElement(locs, 'Locator', Id=str(i))
         for tag, v in [('LomId', '0'), ('Time', str(t)), ('Name', name), ('Annotation', note), ('IsSongStart', 'false')]:
@@ -197,7 +232,8 @@ def build():
     set_value(track, 'Name/EffectiveName', 'Exercise 1')
     summary = ('Navigation exercise 1 from Ableton Live, Mapped: move between views, open Clip and Device View, '
                'load a device by searching the Browser, and record from the computer keyboard into Arrangement. '
-               'Each scene name and locator is one step with its keys; hover it with Info View open for the full step and its atlas card.')
+               'In Session View each row is one step: the clip names it, the scene beside it gives the keys. In Arrangement View the locators are the last steps. '
+               'Hover a step with Info View open for the full step and its atlas card.')
     set_value(track, 'Name/Annotation', summary)
     set_value(ls, 'Annotation', summary)
     set_value(ls, 'SelectedDocumentViewInMainWindow', '0')
@@ -219,18 +255,20 @@ def write_md():
         '',
         'Where the steps are in Live:',
         '',
-        '- Steps 1-8 are the scene names in Session View, top to bottom. The clip "Select me" sits in the step 3 row.',
-        '- Steps 9-12 are locators along the top of Arrangement View, left to right. The locator at bar 1 points back to Session View.',
-        '- Each scene, locator and the clip carries the full step as info text. With Info View open (step 1), hover it to read it.',
+        '- Steps 1-8 are the rows of Session View, top to bottom. Each row\'s clip is named with the step; the scene name beside it, on the right, gives the keys. Step 3 is to click a clip name.',
+        '- Steps 9-12 are locators along the top of Arrangement View, left to right, 8 bars apart. The locator at bar 1 points back to Session View.',
+        f'- The track and the scene column are {TRACK_WIDTH} px wide (Live\'s default is 93 and 84), so the names fit; the script stops if one is longer than its column holds ({CLIP_CHARS} characters, {LOCATOR_CHARS} for locators).',
+        '- Each clip, scene and locator carries the full step as info text. With Info View open (step 1), hover it to read it.',
         '',
-        '| Step | Where | What to do | Mac keys | Windows keys | Shortcut-table action | Atlas card |',
-        '|---|---|---|---|---|---|---|',
+        '| Step | Where | Shown in Live | What to do | Mac keys | Windows keys | Shortcut-table action | Atlas card |',
+        '|---|---|---|---|---|---|---|---|',
     ]
     for s in STEPS:
-        where = 'Session (scene)' if s['where'] == 'session' else 'Arrangement (locator)'
+        where = 'Session (clip and scene)' if s['where'] == 'session' else 'Arrangement (locator)'
+        shown = f"{clip_name(s)} / {scene_name(s)}" if s['where'] == 'session' else locator_name(s)
         acts = '; '.join(r['action'] for r in s['rows']) or '—'
         win = ', then '.join(r['win'].split(' or ')[0] for r in s['rows']) or s['click']
-        lines.append(f"| {s['n']} | {where} | {s['do']} | {keys_text(s)} | {win} | {acts} | {s['card_title']} (`{s['card']}`) |")
+        lines.append(f"| {s['n']} | {where} | {shown} | {s['do']} | {keys_text(s)} | {win} | {acts} | {s['card_title']} (`{s['card']}`) |")
     lines += [
         '',
         'Notes',
@@ -248,6 +286,7 @@ def write_md():
 
 if __name__ == '__main__':
     resolve(atlas_data())
+    check_fit()
     build()
     write_md()
     print(f'wrote {OUT_ALS}\nwrote {OUT_MD}')

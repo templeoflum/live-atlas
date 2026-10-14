@@ -6,24 +6,25 @@ File: `practice/navigation-exercise-1.als` (Live 12 format, built from Live 12.4
 
 Where the steps are in Live:
 
-- Steps 1-8 are the scene names in Session View, top to bottom. The clip "Select me" sits in the step 3 row.
-- Steps 9-12 are locators along the top of Arrangement View, left to right. The locator at bar 1 points back to Session View.
-- Each scene, locator and the clip carries the full step as info text. With Info View open (step 1), hover it to read it.
+- Steps 1-8 are the rows of Session View, top to bottom. Each row's clip is named with the step; the scene name beside it, on the right, gives the keys. Step 3 is to click a clip name.
+- Steps 9-12 are locators along the top of Arrangement View, left to right, 8 bars apart. The locator at bar 1 points back to Session View.
+- The track and the scene column are 226 px wide (Live's default is 93 and 84), so the names fit; the script stops if one is longer than its column holds (30 characters, 36 for locators).
+- Each clip, scene and locator carries the full step as info text. With Info View open (step 1), hover it to read it.
 
-| Step | Where | What to do | Mac keys | Windows keys | Shortcut-table action | Atlas card |
-|---|---|---|---|---|---|---|
-| 1 | Session (scene) | Show Info View, the help area at the bottom left. From now on, hover over a scene name to read that step in full there. | Shift ? | Shift ? | Hide/Show Info View | Info View (`ref-first-steps--info-view`) |
-| 2 | Session (scene) | Go to Arrangement View, then back here to Session View. If Tab moves focus instead, Use Tab to Move Focus is on in Settings. | Tab | Tab | Toggle Session/Arrangement View | Session View (`session`) |
-| 3 | Session (scene) | Click the name of the clip "Select me" in this row. Click the name, not the triangle: the triangle launches it. | Click the clip name | Click the clip name | — | Clips (`clips`) |
-| 4 | Session (scene) | Make the bottom panel show Clip View: the selected clip's (empty) notes and settings. If it already does, press the keys twice to see them switch. | Shift Tab | Shift Tab | Toggle Between Device/Clip View | Clip View (`clip-view`) |
-| 5 | Session (scene) | Swap the bottom panel to Device View: this track's devices, empty for now. | Shift Tab | Shift Tab | Toggle Between Device/Clip View | Device View (`device-view`) |
-| 6 | Session (scene) | Show the Browser on the left, if it is hidden. | Cmd Option B | Ctrl Alt B | Hide/Show Browser | Show / hide Browser (`hide-browser`) |
-| 7 | Session (scene) | Search the Browser for Drift, then jump down to the results. | Cmd F, then down arrow key | Ctrl F, then down arrow key | Search in Browser; Jump to Search Results | Browser (`browser`) |
-| 8 | Session (scene) | With Drift highlighted, load it. It appears in Device View on this track. | Enter | Enter | Add Device from Browser | Instrument (`instrument`) |
-| 9 | Arrangement (locator) | Go to Arrangement View. The rest of the steps are these locators, left to right. | Tab | Tab | Toggle Session/Arrangement View | Arrangement View (`arrangement`) |
-| 10 | Arrangement (locator) | Arm the selected track. Arm it before step 11: with the computer keyboard on, C changes velocity instead. | C | C | Arm Selected Tracks | Arm (`ca-arm`) |
-| 11 | Arrangement (locator) | Turn on the Computer MIDI Keyboard, then press A, S, D and F to hear Drift. | M | M | Computer MIDI Keyboard | Play with the computer keyboard (`keys-typing`) |
-| 12 | Arrangement (locator) | Record into the Arrangement, play a few keys, then stop. A new clip appears on the track. | F9, then Space | F9, then Space | Record; Play from Start Marker/Stop | Record in Arrangement (`ca-record-arrangement`) |
+| Step | Where | Shown in Live | What to do | Mac keys | Windows keys | Shortcut-table action | Atlas card |
+|---|---|---|---|---|---|---|---|
+| 1 | Session (clip and scene) | 1 Show Info View / 1 · Shift ? | Show Info View, the help area at the bottom left. From now on, hover over a step to read it in full there. | Shift ? | Shift ? | Hide/Show Info View | Info View (`ref-first-steps--info-view`) |
+| 2 | Session (clip and scene) | 2 Go to Arrangement and back / 2 · Tab | Go to Arrangement View, then back here to Session View. If Tab moves focus instead, Use Tab to Move Focus is on in Settings. | Tab | Tab | Toggle Session/Arrangement View | Session View (`session`) |
+| 3 | Session (clip and scene) | 3 Click this clip's name / 3 · Click the clip name | Click the name of this clip. Click the name, not the triangle: the triangle launches it. | Click the clip name | Click the clip name | — | Clips (`clips`) |
+| 4 | Session (clip and scene) | 4 Show Clip View / 4 · Shift Tab | Make the bottom panel show Clip View: the selected clip's (empty) notes and settings. If it already does, press the keys twice to see them switch. | Shift Tab | Shift Tab | Toggle Between Device/Clip View | Clip View (`clip-view`) |
+| 5 | Session (clip and scene) | 5 Show Device View / 5 · Shift Tab | Swap the bottom panel to Device View: this track's devices, empty for now. | Shift Tab | Shift Tab | Toggle Between Device/Clip View | Device View (`device-view`) |
+| 6 | Session (clip and scene) | 6 Show the Browser / 6 · Cmd Option B | Show the Browser on the left, if it is hidden. | Cmd Option B | Ctrl Alt B | Hide/Show Browser | Show / hide Browser (`hide-browser`) |
+| 7 | Session (clip and scene) | 7 Find Drift in the Browser / 7 · Cmd F, then down arrow key | Search the Browser for Drift, then jump down to the results. | Cmd F, then down arrow key | Ctrl F, then down arrow key | Search in Browser; Jump to Search Results | Browser (`browser`) |
+| 8 | Session (clip and scene) | 8 Load Drift onto this track / 8 · Enter | With Drift highlighted, load it. It appears in Device View on this track. | Enter | Enter | Add Device from Browser | Instrument (`instrument`) |
+| 9 | Arrangement (locator) | 9 Go to Arrangement View · Tab | Go to Arrangement View. The rest of the steps are these locators, left to right. | Tab | Tab | Toggle Session/Arrangement View | Arrangement View (`arrangement`) |
+| 10 | Arrangement (locator) | 10 Arm this track · C | Arm the selected track. Arm it before step 11: with the computer keyboard on, C changes velocity instead. | C | C | Arm Selected Tracks | Arm (`ca-arm`) |
+| 11 | Arrangement (locator) | 11 Keys on, play A S D F · M | Turn on the Computer MIDI Keyboard, then press A, S, D and F to hear Drift. | M | M | Computer MIDI Keyboard | Play with the computer keyboard (`keys-typing`) |
+| 12 | Arrangement (locator) | 12 Record a take · F9, then Space | Record into the Arrangement, play a few keys, then stop. A new clip appears on the track. | F9, then Space | F9, then Space | Record; Play from Start Marker/Stop | Record in Arrangement (`ca-record-arrangement`) |
 
 Notes
 
