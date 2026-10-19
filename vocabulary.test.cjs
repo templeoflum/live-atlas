@@ -45,3 +45,11 @@ for(const text of ['project folder','Live Projects','the project’s Samples/Rec
   assert.equal(projectPattern.test(text),true,'Folder Project remains discoverable: '+text);
 }
 console.log('Passed: Project folder matches exclude Set tempo, playback, sample-rate and timing-reference senses.');
+// T-0281: an instruction that opens with "Set" is a verb, not the Live Set.
+for(const [before,after] of [['','the loop length.'],['Tap twice. ','how fast it moves.'],['','a note length.']]){
+  assert.equal(vocabulary.imperative(before,'Set',' '+after),true,'Imperative Set is skipped: Set '+after);
+}
+for(const [before,word,after] of [['','Set',' documents, media dependencies.'],['Tracks run down the page; ','Set',' time runs across it.'],['Save the ','Set',' before you quit.'],['','Sets',' hold tracks.'],['Open a ','Set','.'],['','Set','']]){
+  assert.equal(vocabulary.imperative(before,word,after),false,'Noun Set stays a term: '+before+word+after);
+}
+console.log('Passed: sentence-opening "Set the…" instructions are not linked as Live Set; noun uses still are.');

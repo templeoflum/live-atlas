@@ -9,7 +9,7 @@ const vocabulary=(()=>{
     {term:'Clip View',match:'Clip View',home:'clip-view',keys:['Toggle Between Device/Clip View'],def:'The editor for the selected clip’s notes or audio.'},
     {term:'Device View',match:'Device View',home:'device-view',keys:['Toggle Between Device/Clip View'],def:'The panel showing the selected track’s devices.'},
     {term:'Browser',match:'Browser',home:'browser',keys:['Hide/Show Browser'],def:'The panel for finding sounds, devices, samples and presets.'},
-    {term:'Set',match:'Live Sets?|Sets?',exact:true,home:'set',source:'live-concepts#live-sets',def:'A Live document (.als) containing tracks, clips, devices and settings.'},
+    {term:'Set',match:'Live Sets?|Sets?',exact:true,verbAtStart:true,home:'set',source:'live-concepts#live-sets',def:'A Live document (.als) containing tracks, clips, devices and settings.'},
     {term:'Clip',match:'clips?',home:'clips',def:'A piece of audio or MIDI in a Session slot or on the timeline.'},
     {term:'Scene',match:'scenes?',home:'scenes',keys:['Insert Scene'],def:'A Session row. Launching it starts every clip in that row together.'},
     {term:'Track',match:'tracks?',home:'tracks',source:'live-concepts#the-mixer',def:'A channel for audio or MIDI signals; only audio and MIDI tracks hold clips.'},
@@ -77,6 +77,10 @@ const vocabulary=(()=>{
     ordered.forEach(t=>{t.rows=(t.keys||[]).map(shortcut);byIndex.push(t);});
     pattern=new RegExp(ordered.map(t=>`\\b(${t.match})\\b`).join('|'),'gi');
   }
+  // "Set the loop…" opens an instruction; "Set documents…" and "Set time" name the document.
+  function imperative(before,word,after){
+    return word==='Set'&&/(?:^|[.!?]\s+)$/.test(before)&&/^ (?!(?:documents?|files?|time|tempo)\b)[a-z]/.test(after);
+  }
   const skip='button,a,kbd,code,h1,h2,h3,h4,h5,h6,dt,label,select,option,summary,figcaption,nav,.term,.insp-meta,.insp-eyebrow,.card-navigation';
   function decorate(root,currentIds){
     const used=new Set([...root.querySelectorAll('.term')].map(el=>el.dataset.term));
@@ -89,6 +93,7 @@ const vocabulary=(()=>{
         const t=byIndex[m.slice(1).findIndex(Boolean)];
         if(!t||used.has(t.term)||currentIds.includes(t.home))continue;
         if(t.views&&!currentIds.some(id=>t.views.includes(model.entries.get(id)?.view)))continue;
+        if(t.verbAtStart&&imperative(text.slice(0,m.index),m[0],text.slice(m.index+m[0].length)))continue;
         if(t.exact&&!new RegExp(`^(?:${t.match})$`).test(m[0]))continue;
         used.add(t.term);if(frag===null)frag=document.createDocumentFragment();
         frag.append(text.slice(last,m.index));
@@ -139,5 +144,5 @@ const vocabulary=(()=>{
       run();
     });
   }
-  return {terms,install,bind,decorate,click,close};
+  return {terms,install,bind,decorate,click,close,imperative};
 })();
