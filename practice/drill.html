@@ -23,8 +23,26 @@
     #keys{width:100%;min-height:60px;text-align:left}
     #keys:focus{background:var(--brass);color:var(--ebony)}
     #feedback{height:4em;margin:18px 0 0;color:var(--ivory);font-family:var(--f-mono);font-size:1.15rem}
+    .workspace-map{display:grid;grid-template-columns:100px 1fr 1fr;gap:8px;margin:20px 0;color:var(--ivory);font-size:14px}
+    .region{border:1px solid var(--ivory-dim);padding:10px;min-width:0;height:90px;box-sizing:border-box;position:relative}
+    .region strong{display:block;font-weight:600}
+    .region[data-target="true"]{outline:2px dashed var(--ivory);outline-offset:2px}
+    .region[data-active="true"]{border:3px solid var(--brass);padding:8px}
+    .region[data-hidden="true"] .picture{visibility:hidden}
+    .region[data-hidden="true"]{border-style:dotted}
+    .region span{display:block;font-size:12px;margin-top:5px}
+    #region-browser{grid-row:span 2;height:188px}
+    .picture{height:28px;margin-top:8px;opacity:.9}
+    .session-picture{background:repeating-linear-gradient(90deg,transparent 0 18%,var(--ivory-dim) 18% 20%),repeating-linear-gradient(0deg,transparent 0 40%,var(--ivory-dim) 40% 46%)}
+    .arrangement-picture{background:repeating-linear-gradient(0deg,transparent 0 25%,var(--ivory-dim) 25% 33%)}
+    .clip-picture{background:linear-gradient(90deg,transparent 10%,var(--brass) 10% 25%,transparent 25% 40%,var(--brass) 40% 65%,transparent 65%);height:8px;margin-top:18px}
+    .device-picture{border:2px solid var(--ivory-dim);border-radius:3px;width:70%;height:18px}
+    .browser-picture{background:repeating-linear-gradient(0deg,transparent 0 12px,var(--ivory-dim) 12px 14px);height:95px}
+    #effect{height:3em;margin:0;color:var(--ivory)}
+    .audio-control{margin-top:12px}
     nav{display:flex;justify-content:space-between;margin-top:24px}
     .condition{margin-top:24px}
+    @media(max-width:480px){.workspace-map{grid-template-columns:1fr 1fr}#region-browser{grid-row:auto;grid-column:span 2;height:90px}.browser-picture{height:28px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
   </style>
   <script src="../manual-data.js" defer></script>
@@ -34,16 +52,25 @@
 <body>
   <div class="drill-scroll">
     <main>
-      <div class="eyebrow">Workspace · Navigation · Mac</div>
+      <div class="eyebrow">Workspace · Navigation · Mac · Key recall</div>
       <h1>Navigation</h1>
       <hr>
-      <p>Key recall only. Browser keys do not control Live.</p>
+      <p>Workspace map · dashed outline marks the action’s target.</p>
       <section class="prompt" aria-labelledby="action">
         <h2 id="action"></h2>
         <p class="card-link"><a id="card" target="_blank" rel="noopener">Atlas card</a></p>
-        <button id="keys" type="button">Press keys · Escape exits</button>
+        <div class="workspace-map" aria-label="Live workspace map">
+          <div class="region" id="region-browser"><strong>Browser</strong><span class="state">Visible</span><div class="picture browser-picture" aria-hidden="true"></div></div>
+          <div class="region" id="region-session"><strong>Session</strong><span class="state">Visible</span><div class="picture session-picture" aria-hidden="true"></div></div>
+          <div class="region" id="region-arrangement"><strong>Arrangement</strong><span class="state">Hidden</span><div class="picture arrangement-picture" aria-hidden="true"></div></div>
+          <div class="region" id="region-clip"><strong>Clip</strong><span class="state">Visible</span><div class="picture clip-picture" aria-hidden="true"></div></div>
+          <div class="region" id="region-device"><strong>Device</strong><span class="state">Hidden</span><div class="picture device-picture" aria-hidden="true"></div></div>
+        </div>
+        <p id="effect" role="status" aria-live="polite"></p>
+        <button id="keys" type="button">Press keys · Enter: next · Escape: exit</button>
         <p id="feedback" role="status" aria-live="polite"></p>
-        <nav aria-label="Actions"><button id="previous" type="button">Previous</button><button id="next" type="button">Next</button></nav>
+        <nav aria-label="Actions"><button id="previous" type="button">Previous</button><button id="next" type="button">Next · Enter</button></nav>
+        <button class="audio-control" id="audio" type="button" aria-pressed="false">Spoken cues: off</button>
       </section>
       <p class="condition">In Live: Tab switches views when Use Tab to Move Focus is off.</p>
     </main>
