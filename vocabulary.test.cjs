@@ -22,3 +22,26 @@ assert.equal(m.devicesAtlas.locations.get(osc.home).area,operator.area,'Oscillat
 assert.notEqual(osc.home,'operator','Oscillator home differs from the opening card, so the term underlines there');
 assert.ok(pattern.test(operator.item.body),'Operator’s opening card mentions oscillators');
 console.log(`Passed: ${names.size} vocabulary terms, each with a real home card, manual-table shortcuts and a one-line meaning.`);
+// T-0203: the manual-backed corrections and missing basics retain explicit provenance.
+const corrected=['Set','Track','MIDI','Quantize','Launch Quantization','Follow Action','Capture MIDI','Clip Envelope','Device Chain','MIDI Effect','Main track','Routing','Consolidate','Resampling','Loop Brace','Take Lane'];
+const added=['Audio','Project','Modulation','Envelope','LFO','Filter','Cutoff','Resonance'];
+for(const name of [...corrected,...added]){
+  const t=vocabulary.terms.find(t=>t.term===name);
+  assert.ok(t?.source,'Manual-backed resolution exists: '+name);
+}
+// These are distinct concepts, even when one name contains another.
+for(const [name,example] of [['Project','project folder'],['Envelope','envelopes'],['LFO','LFOs'],['Resonance','resonances'],['Loop Brace','loop brace']]){
+  const t=vocabulary.terms.find(t=>t.term===name);
+  assert.ok(new RegExp(`\\b(?:${t.match})\\b`,'i').test(example),'Basic mention matches: '+example);
+}
+assert.deepEqual(Array.from(vocabulary.terms.find(t=>t.term==='Filter').views),['devices'],'Audio filters are scoped away from Browser search filters');
+console.log('Passed: 16 corrected meanings and 8 added basics retain manual sources and contextual patterns.');
+// Project means a folder, not the manual's colloquial Set tempo/rate wording.
+const projectPattern=new RegExp(`\\b(?:${vocabulary.terms.find(t=>t.term==='Project').match})\\b`,'i');
+for(const text of ['The current project playback tempo.','Project playback speed in beats per minute.','project sample rate','The project’s separate timing reference.','project tempo','Project rate','project\'s sample rate','Live Project’s tempo','projects rate']){
+  assert.equal(projectPattern.test(text),false,'No folder definition for Set timing/rate: '+text);
+}
+for(const text of ['project folder','Live Projects','the project’s Samples/Recorded folder','the Project’s Samples folder','collect the project’s samples','move the project']){
+  assert.equal(projectPattern.test(text),true,'Folder Project remains discoverable: '+text);
+}
+console.log('Passed: Project folder matches exclude Set tempo, playback, sample-rate and timing-reference senses.');
